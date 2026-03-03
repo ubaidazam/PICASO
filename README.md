@@ -7,6 +7,12 @@ A pip-installable Python package for knowledge graph embedding with built-in unc
 ## Installation
 
 ```bash
+pip install pypicaso
+```
+
+Or install directly from GitHub:
+
+```bash
 pip install git+https://github.com/ubaidazam/PICASO.git
 ```
 
