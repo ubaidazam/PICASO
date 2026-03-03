@@ -1,0 +1,47 @@
+============================================================
+WIKIDATA DEFENCE DOMAIN EXTRACTION SUMMARY
+============================================================
+
+Total entities scanned: 63,012,860
+Total entities extracted: 41425
+Total relations extracted: 143532
+Entities with subgraphs: 41425
+
+Entity distribution by class:
+  - military unit: 16081
+  - battle: 10519
+  - weapon: 5247
+  - treaty: 1848
+  - military operation: 1668
+  - conflict: 1477
+  - military base: 1090
+  - military rank: 1021
+  - military decoration: 689
+  - military academy: 319
+  - naval vessel: 221
+  - intelligence agency: 206
+  - military organization: 203
+  - warship: 199
+  - aircraft: 185
+  - navy: 161
+  - military alliance: 58
+  - military equipment: 45
+  - firearm: 41
+  - defence contractor: 26
+  - military aircraft: 20
+  - artillery: 17
+  - military personnel: 15
+  - military vehicle: 13
+  - radar: 13
+  - tank: 12
+  - military doctrine: 12
+  - soldier: 10
+  - military technology: 4
+  - missile defense: 3
+  - missile: 2
+
+Average direct relations per entity: 3.46
+Entities with at least one relation: 41425 (100.0%)
+
+Time taken for Processing: 394m (~ 6.56 h)
+

@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# IDE / tool config
+.claude/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.ipynb_checkpoints/
+dist/
+build/
+*.egg
+
+# Model checkpoints
+*.pt
+*.pth
+
+# Environment
+.env
+.env.local

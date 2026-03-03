@@ -1,0 +1,24 @@
+{
+  "extraction_date": "2025-12-15 13:14:16",
+  "input_csv_stats": {
+    "total_entities": 41425,
+    "entities_with_wikipedia_flag": 20818,
+    "percentage_with_wikipedia": 50.25
+  },
+  "extraction_stats": {
+    "successfully_extracted": 20808,
+    "failed": 0,
+    "success_rate": 99.95
+  },
+  "content_stats": {
+    "total_text_extracted_chars": 160499171,
+    "avg_text_length": 7713.34,
+    "avg_sections_per_page": 4.83
+  },
+  "output_files": [
+    "wikipedia_all_entities.json - Consolidated results",
+    "defence_entities_enriched.csv - CSV with Wikipedia stats",
+    "wikipedia_chunk_*.json - Individual chunk files",
+    "extraction_report.json - This report"
+  ]
+}

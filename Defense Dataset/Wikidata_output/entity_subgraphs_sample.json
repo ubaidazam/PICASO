@@ -1,0 +1,7016 @@
+{
+  "Q6891": {
+    "center_entity_id": "Q6891",
+    "center_entity_label": "Battle of Bagradas",
+    "radius_1": [
+      {
+        "source_id": "Q6891",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q6891",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q6286"
+      },
+      {
+        "source_id": "Q6891",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q3572"
+      },
+      {
+        "source_id": "Q6891",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q2890265"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q28479": {
+    "center_entity_id": "Q28479",
+    "center_entity_label": "Kumanovo Agreement",
+    "radius_1": [
+      {
+        "source_id": "Q28479",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q625298"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q208383"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q155723"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q221"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q54452"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q110045633"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q716899"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "P407",
+        "property_id": "P407",
+        "target_id": "Q150"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "P407",
+        "property_id": "P407",
+        "target_id": "Q1860"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "P407",
+        "property_id": "P407",
+        "target_id": "Q9299"
+      },
+      {
+        "source_id": "Q28479",
+        "property": "P2058",
+        "property_id": "P2058",
+        "target_id": "Q7184"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q155723",
+        "entity_label": "NATO bombing of Yugoslavia",
+        "relations": [
+          {
+            "source_id": "Q155723",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q190029"
+          },
+          {
+            "source_id": "Q155723",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q645883"
+          },
+          {
+            "source_id": "Q155723",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q7184"
+          },
+          {
+            "source_id": "Q155723",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q30"
+          },
+          {
+            "source_id": "Q155723",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q9607779"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q7184",
+        "entity_label": "NATO",
+        "relations": [
+          {
+            "source_id": "Q7184",
+            "property": "P37",
+            "property_id": "P37",
+            "target_id": "Q1860"
+          },
+          {
+            "source_id": "Q7184",
+            "property": "P37",
+            "property_id": "P37",
+            "target_id": "Q150"
+          },
+          {
+            "source_id": "Q7184",
+            "property": "P163",
+            "property_id": "P163",
+            "target_id": "Q459788"
+          },
+          {
+            "source_id": "Q7184",
+            "property": "P78",
+            "property_id": "P78",
+            "target_id": "Q753137"
+          },
+          {
+            "source_id": "Q7184",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q7164696"
+          }
+        ]
+      }
+    ]
+  },
+  "Q28651": {
+    "center_entity_id": "Q28651",
+    "center_entity_label": "Siege of Bitche",
+    "radius_1": [
+      {
+        "source_id": "Q28651",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q28651",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q188055"
+      },
+      {
+        "source_id": "Q28651",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q46083"
+      },
+      {
+        "source_id": "Q28651",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q22754"
+      },
+      {
+        "source_id": "Q28651",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q142"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q33570": {
+    "center_entity_id": "Q33570",
+    "center_entity_label": "Battle of Grunwald",
+    "radius_1": [
+      {
+        "source_id": "Q33570",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1190554"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q1025864"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q6898194"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4532138"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q124737616"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q36"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q156020"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q49683"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q36"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q435583"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q42585"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q79965"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q131372"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q175211"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q151536"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q10957559"
+      },
+      {
+        "source_id": "Q33570",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q937255"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q37770": {
+    "center_entity_id": "Q37770",
+    "center_entity_label": "Belarusian Corps of Self-Defence",
+    "radius_1": [
+      {
+        "source_id": "Q37770",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q37770",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q7318"
+      },
+      {
+        "source_id": "Q37770",
+        "property": "headquarters location",
+        "property_id": "P159",
+        "target_id": "Q2280"
+      },
+      {
+        "source_id": "Q37770",
+        "property": "P1001",
+        "property_id": "P1001",
+        "target_id": "Q2331803"
+      },
+      {
+        "source_id": "Q37770",
+        "property": "P797",
+        "property_id": "P797",
+        "target_id": "Q1977147"
+      },
+      {
+        "source_id": "Q37770",
+        "property": "followed by",
+        "property_id": "P156",
+        "target_id": "Q2632622"
+      },
+      {
+        "source_id": "Q37770",
+        "property": "P1366",
+        "property_id": "P1366",
+        "target_id": "Q2632622"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q2632622",
+        "entity_label": "Belarusian Home Defence",
+        "relations": [
+          {
+            "source_id": "Q2632622",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q27236028"
+          },
+          {
+            "source_id": "Q2632622",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q2632622",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q7318"
+          },
+          {
+            "source_id": "Q2632622",
+            "property": "participated in conflict",
+            "property_id": "P607",
+            "target_id": "Q151052"
+          },
+          {
+            "source_id": "Q2632622",
+            "property": "P6365",
+            "property_id": "P6365",
+            "target_id": "Q27236026"
+          }
+        ]
+      }
+    ]
+  },
+  "Q38789": {
+    "center_entity_id": "Q38789",
+    "center_entity_label": "Battle of Stalingrad",
+    "radius_1": [
+      {
+        "source_id": "Q38789",
+        "property": "P533",
+        "property_id": "P533",
+        "target_id": "Q914"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q7457190"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q189266"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q914"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q3355607"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q7303660"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q4830629"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q914"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q27910202"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q159"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q153128"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q600018"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q172579"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q203493"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q13474305"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q7318"
+      },
+      {
+        "source_id": "Q38789",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q15180"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q38977": {
+    "center_entity_id": "Q38977",
+    "center_entity_label": "Battle of Deutschbrod",
+    "radius_1": [
+      {
+        "source_id": "Q38977",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q38977",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12548"
+      },
+      {
+        "source_id": "Q38977",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q954596"
+      },
+      {
+        "source_id": "Q38977",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q478301"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q40144": {
+    "center_entity_id": "Q40144",
+    "center_entity_label": "Battle of Coronel",
+    "radius_1": [
+      {
+        "source_id": "Q40144",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q40144",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q361"
+      },
+      {
+        "source_id": "Q40144",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q98"
+      },
+      {
+        "source_id": "Q40144",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q26979622"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q44732": {
+    "center_entity_id": "Q44732",
+    "center_entity_label": "Battle of the Golden Spurs",
+    "radius_1": [
+      {
+        "source_id": "Q44732",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q195983"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q31"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q12995"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q3181656"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19219752"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q111845748"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q8884758"
+      },
+      {
+        "source_id": "Q44732",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q1095120"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q1095120",
+        "entity_label": "Battle of Courtrai",
+        "relations": [
+          {
+            "source_id": "Q1095120",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q178561"
+          },
+          {
+            "source_id": "Q1095120",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q1130507"
+          },
+          {
+            "source_id": "Q1095120",
+            "property": "location",
+            "property_id": "P276",
+            "target_id": "Q102728"
+          },
+          {
+            "source_id": "Q1095120",
+            "property": "location",
+            "property_id": "P276",
+            "target_id": "Q1296"
+          },
+          {
+            "source_id": "Q1095120",
+            "property": "location",
+            "property_id": "P276",
+            "target_id": "Q665761"
+          }
+        ]
+      }
+    ]
+  },
+  "Q57706": {
+    "center_entity_id": "Q57706",
+    "center_entity_label": "Papal Zouaves",
+    "radius_1": [
+      {
+        "source_id": "Q57706",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q8712834"
+      },
+      {
+        "source_id": "Q57706",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q57706",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q170174"
+      },
+      {
+        "source_id": "Q57706",
+        "property": "P1365",
+        "property_id": "P1365",
+        "target_id": "Q111238942"
+      },
+      {
+        "source_id": "Q57706",
+        "property": "P1366",
+        "property_id": "P1366",
+        "target_id": "Q45321391"
+      },
+      {
+        "source_id": "Q57706",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q1248722"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q63701": {
+    "center_entity_id": "Q63701",
+    "center_entity_label": "Battle of Saint-Omer",
+    "radius_1": [
+      {
+        "source_id": "Q63701",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q63701",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q188055"
+      },
+      {
+        "source_id": "Q63701",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q12551"
+      },
+      {
+        "source_id": "Q63701",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q208793"
+      },
+      {
+        "source_id": "Q63701",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q142"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q74257": {
+    "center_entity_id": "Q74257",
+    "center_entity_label": "Siege of Cassel",
+    "radius_1": [
+      {
+        "source_id": "Q74257",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q74257",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q188055"
+      },
+      {
+        "source_id": "Q74257",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q33143"
+      },
+      {
+        "source_id": "Q74257",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q2865"
+      },
+      {
+        "source_id": "Q74257",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q80439": {
+    "center_entity_id": "Q80439",
+    "center_entity_label": "Cape Town Treaty",
+    "radius_1": [
+      {
+        "source_id": "Q80439",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q5465"
+      },
+      {
+        "source_id": "Q80439",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q80439",
+        "property": "P1001",
+        "property_id": "P1001",
+        "target_id": "Q25230"
+      },
+      {
+        "source_id": "Q80439",
+        "property": "P2058",
+        "property_id": "P2058",
+        "target_id": "Q1192641"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q81925": {
+    "center_entity_id": "Q81925",
+    "center_entity_label": "Lancashire Fusiliers",
+    "radius_1": [
+      {
+        "source_id": "Q81925",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q81925",
+        "property": "military branch",
+        "property_id": "P241",
+        "target_id": "Q222595"
+      },
+      {
+        "source_id": "Q81925",
+        "property": "headquarters location",
+        "property_id": "P159",
+        "target_id": "Q19972077"
+      },
+      {
+        "source_id": "Q81925",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q81925",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q361"
+      },
+      {
+        "source_id": "Q81925",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q28131043"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q82973": {
+    "center_entity_id": "Q82973",
+    "center_entity_label": "Transnistria conflict",
+    "radius_1": [
+      {
+        "source_id": "Q82973",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q180684"
+      },
+      {
+        "source_id": "Q82973",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q907112"
+      },
+      {
+        "source_id": "Q82973",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q1975306"
+      },
+      {
+        "source_id": "Q82973",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q285280"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q1975306",
+        "entity_label": "post-Soviet conflicts",
+        "relations": [
+          {
+            "source_id": "Q1975306",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q7689677"
+          },
+          {
+            "source_id": "Q1975306",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q180684"
+          },
+          {
+            "source_id": "Q1975306",
+            "property": "P1424",
+            "property_id": "P1424",
+            "target_id": "Q8085252"
+          },
+          {
+            "source_id": "Q1975306",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q15860072"
+          },
+          {
+            "source_id": "Q1975306",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q14947002"
+          }
+        ]
+      }
+    ]
+  },
+  "Q94635": {
+    "center_entity_id": "Q94635",
+    "center_entity_label": "Uqair Protocol of 1922",
+    "radius_1": [
+      {
+        "source_id": "Q94635",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q94635",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q3546517"
+      },
+      {
+        "source_id": "Q94635",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q3546517"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q94794": {
+    "center_entity_id": "Q94794",
+    "center_entity_label": "Operation Change of Direction 11",
+    "radius_1": [
+      {
+        "source_id": "Q94794",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q49104"
+      },
+      {
+        "source_id": "Q94794",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q1480109"
+      },
+      {
+        "source_id": "Q94794",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q645883"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q106308": {
+    "center_entity_id": "Q106308",
+    "center_entity_label": "European Charter for Regional or Minority Languages",
+    "radius_1": [
+      {
+        "source_id": "Q106308",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q727002"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q6602"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "P485",
+        "property_id": "P485",
+        "target_id": "Q8908"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q12717"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q142"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "P5008",
+        "property_id": "P5008",
+        "target_id": "Q13382529"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "P921",
+        "property_id": "P921",
+        "target_id": "Q1667964"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "P407",
+        "property_id": "P407",
+        "target_id": "Q1860"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "P407",
+        "property_id": "P407",
+        "target_id": "Q150"
+      },
+      {
+        "source_id": "Q106308",
+        "property": "P2058",
+        "property_id": "P2058",
+        "target_id": "Q2942251"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q118514": {
+    "center_entity_id": "Q118514",
+    "center_entity_label": "Revolt of Czechoslovak Legion",
+    "radius_1": [
+      {
+        "source_id": "Q118514",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q124737635"
+      },
+      {
+        "source_id": "Q118514",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q1322976"
+      },
+      {
+        "source_id": "Q118514",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q79911"
+      },
+      {
+        "source_id": "Q118514",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q124734"
+      },
+      {
+        "source_id": "Q118514",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q645883"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q125168": {
+    "center_entity_id": "Q125168",
+    "center_entity_label": "Marshal of the Soviet Union",
+    "radius_1": [
+      {
+        "source_id": "Q125168",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q56019"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q6997037"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q15180"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q111837"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "followed by",
+        "property_id": "P156",
+        "target_id": "Q2359140"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "P3730",
+        "property_id": "P3730",
+        "target_id": "Q1501888"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "P3729",
+        "property_id": "P3729",
+        "target_id": "Q2604857"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "P3729",
+        "property_id": "P3729",
+        "target_id": "Q3825180"
+      },
+      {
+        "source_id": "Q125168",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q1986828"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q1501888",
+        "entity_label": "Generalissimus of the Soviet Union",
+        "relations": [
+          {
+            "source_id": "Q1501888",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q1501888",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q64728694"
+          },
+          {
+            "source_id": "Q1501888",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q191079"
+          },
+          {
+            "source_id": "Q1501888",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q15180"
+          },
+          {
+            "source_id": "Q1501888",
+            "property": "P3729",
+            "property_id": "P3729",
+            "target_id": "Q125168"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q1986828",
+        "entity_label": "Admiral of the Fleet of the Soviet Union",
+        "relations": [
+          {
+            "source_id": "Q1986828",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q1986828",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q15180"
+          },
+          {
+            "source_id": "Q1986828",
+            "property": "P945",
+            "property_id": "P945",
+            "target_id": "Q15180"
+          },
+          {
+            "source_id": "Q1986828",
+            "property": "P3730",
+            "property_id": "P3730",
+            "target_id": "Q1501888"
+          },
+          {
+            "source_id": "Q1986828",
+            "property": "P3729",
+            "property_id": "P3729",
+            "target_id": "Q23024093"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q2359140",
+        "entity_label": "Marshal of the Russian Federation",
+        "relations": [
+          {
+            "source_id": "Q2359140",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q2359140",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q7831311"
+          },
+          {
+            "source_id": "Q2359140",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q159"
+          },
+          {
+            "source_id": "Q2359140",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q111837"
+          },
+          {
+            "source_id": "Q2359140",
+            "property": "P3729",
+            "property_id": "P3729",
+            "target_id": "Q15730331"
+          }
+        ]
+      }
+    ]
+  },
+  "Q126938": {
+    "center_entity_id": "Q126938",
+    "center_entity_label": "R Force",
+    "radius_1": [
+      {
+        "source_id": "Q126938",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q126938",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q362"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q128996": {
+    "center_entity_id": "Q128996",
+    "center_entity_label": "Battle of Akroinon",
+    "radius_1": [
+      {
+        "source_id": "Q128996",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q128996",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q166824"
+      },
+      {
+        "source_id": "Q128996",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q8575586"
+      },
+      {
+        "source_id": "Q128996",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12544"
+      },
+      {
+        "source_id": "Q128996",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q29100"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q129426": {
+    "center_entity_id": "Q129426",
+    "center_entity_label": "Crosses of Aeronautical Merit",
+    "radius_1": [
+      {
+        "source_id": "Q129426",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1788716"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q4240305"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q8702629"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q29"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q33655012"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "P3730",
+        "property_id": "P3730",
+        "target_id": "Q64398238"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "followed by",
+        "property_id": "P156",
+        "target_id": "Q6805088"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "follows",
+        "property_id": "P155",
+        "target_id": "Q5770432"
+      },
+      {
+        "source_id": "Q129426",
+        "property": "P740",
+        "property_id": "P740",
+        "target_id": "Q2807"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q64398238",
+        "entity_label": "Medalla Aérea",
+        "relations": [
+          {
+            "source_id": "Q64398238",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q1788716"
+          },
+          {
+            "source_id": "Q64398238",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q29"
+          },
+          {
+            "source_id": "Q64398238",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q6805088"
+          },
+          {
+            "source_id": "Q64398238",
+            "property": "P3729",
+            "property_id": "P3729",
+            "target_id": "Q129426"
+          },
+          {
+            "source_id": "Q64398238",
+            "property": "P3730",
+            "property_id": "P3730",
+            "target_id": "Q117104"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q6805088",
+        "entity_label": "",
+        "relations": [
+          {
+            "source_id": "Q6805088",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q1788716"
+          },
+          {
+            "source_id": "Q6805088",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q64398238"
+          },
+          {
+            "source_id": "Q6805088",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q16257809"
+          },
+          {
+            "source_id": "Q6805088",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q16257814"
+          },
+          {
+            "source_id": "Q6805088",
+            "property": "followed by",
+            "property_id": "P156",
+            "target_id": "Q117104"
+          }
+        ]
+      }
+    ]
+  },
+  "Q136344": {
+    "center_entity_id": "Q136344",
+    "center_entity_label": "Battle of Köse Da",
+    "radius_1": [
+      {
+        "source_id": "Q136344",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q975405"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12557"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q975405"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q2268869"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q178913"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q4700676"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q4301653"
+      },
+      {
+        "source_id": "Q136344",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q122875832"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q151187": {
+    "center_entity_id": "Q151187",
+    "center_entity_label": "Potsdam Conference",
+    "radius_1": [
+      {
+        "source_id": "Q151187",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q124737636"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q625994"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q321783"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q55254246"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P706",
+        "property_id": "P706",
+        "target_id": "Q1711"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P8596",
+        "property_id": "P8596",
+        "target_id": "Q104580787"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P7561",
+        "property_id": "P7561",
+        "target_id": "Q104586123"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q145"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q15180"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q129006"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q11613"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q855"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "follows",
+        "property_id": "P155",
+        "target_id": "Q161227"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "followed by",
+        "property_id": "P156",
+        "target_id": "Q322943"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P2348",
+        "property_id": "P2348",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q151187",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q1711"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q152008": {
+    "center_entity_id": "Q152008",
+    "center_entity_label": "Operation Michael",
+    "radius_1": [
+      {
+        "source_id": "Q152008",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q645883"
+      },
+      {
+        "source_id": "Q152008",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q152008",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q750567"
+      },
+      {
+        "source_id": "Q152008",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q18677767"
+      },
+      {
+        "source_id": "Q152008",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q152008",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q174193"
+      },
+      {
+        "source_id": "Q152008",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q142"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q152925": {
+    "center_entity_id": "Q152925",
+    "center_entity_label": "Locarno Treaties",
+    "radius_1": [
+      {
+        "source_id": "Q152925",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q124737630"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q20078554"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q20078554"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q11935"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q39"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q11935"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q41304"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q31"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q142"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q172579"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q8680"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q33946"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q36"
+      },
+      {
+        "source_id": "Q152925",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q98489480"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q152956": {
+    "center_entity_id": "Q152956",
+    "center_entity_label": "brigadier general",
+    "radius_1": [
+      {
+        "source_id": "Q152956",
+        "property": "P1611",
+        "property_id": "P1611",
+        "target_id": "Q18536829"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q56019"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q1501868"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q8312481"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P3730",
+        "property_id": "P3730",
+        "target_id": "Q157148"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P3730",
+        "property_id": "P3730",
+        "target_id": "Q2487961"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q102211352"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q12786493"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q41685"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P3729",
+        "property_id": "P3729",
+        "target_id": "Q104680"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q2925335"
+      },
+      {
+        "source_id": "Q152956",
+        "property": "P511",
+        "property_id": "P511",
+        "target_id": "Q124288524"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q12786493",
+        "entity_label": "brigade general",
+        "relations": [
+          {
+            "source_id": "Q12786493",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q12786493",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q38"
+          },
+          {
+            "source_id": "Q12786493",
+            "property": "P1611",
+            "property_id": "P1611",
+            "target_id": "Q18536829"
+          },
+          {
+            "source_id": "Q12786493",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q152956"
+          },
+          {
+            "source_id": "Q12786493",
+            "property": "P460",
+            "property_id": "P460",
+            "target_id": "Q152956"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q157148",
+        "entity_label": "major general",
+        "relations": [
+          {
+            "source_id": "Q157148",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q157148",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q1501868"
+          },
+          {
+            "source_id": "Q157148",
+            "property": "P460",
+            "property_id": "P460",
+            "target_id": "Q6451204"
+          },
+          {
+            "source_id": "Q157148",
+            "property": "P460",
+            "property_id": "P460",
+            "target_id": "Q871240"
+          },
+          {
+            "source_id": "Q157148",
+            "property": "P460",
+            "property_id": "P460",
+            "target_id": "Q102050517"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q41685",
+        "entity_label": "brigadier",
+        "relations": [
+          {
+            "source_id": "Q41685",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q41685",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q189290"
+          },
+          {
+            "source_id": "Q41685",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q4114391"
+          },
+          {
+            "source_id": "Q41685",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q4114391"
+          },
+          {
+            "source_id": "Q41685",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q19180675"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q104680",
+        "entity_label": "colonel",
+        "relations": [
+          {
+            "source_id": "Q104680",
+            "property": "P1611",
+            "property_id": "P1611",
+            "target_id": "Q18536827"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q1053745"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q678259"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q2041543"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q602358"
+          }
+        ]
+      }
+    ]
+  },
+  "Q153122": {
+    "center_entity_id": "Q153122",
+    "center_entity_label": "Tripartite Pact",
+    "radius_1": [
+      {
+        "source_id": "Q153122",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q6934728"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q29430681"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q64"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q7318"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q172579"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q188712"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q131369518"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q101886"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q220105"
+      },
+      {
+        "source_id": "Q153122",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q1133016"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q153702": {
+    "center_entity_id": "Q153702",
+    "center_entity_label": "Battle of Beroia",
+    "radius_1": [
+      {
+        "source_id": "Q153702",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q153702",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q11909204"
+      },
+      {
+        "source_id": "Q153702",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12544"
+      },
+      {
+        "source_id": "Q153702",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q181752"
+      },
+      {
+        "source_id": "Q153702",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q19908093"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q157148": {
+    "center_entity_id": "Q157148",
+    "center_entity_label": "major general",
+    "radius_1": [
+      {
+        "source_id": "Q157148",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q56019"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q1501868"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q6451204"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q871240"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q102050517"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q13360884"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q7698219"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P1611",
+        "property_id": "P1611",
+        "target_id": "Q18536830"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P3729",
+        "property_id": "P3729",
+        "target_id": "Q152956"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P3729",
+        "property_id": "P3729",
+        "target_id": "Q104680"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P3729",
+        "property_id": "P3729",
+        "target_id": "Q2582912"
+      },
+      {
+        "source_id": "Q157148",
+        "property": "P3730",
+        "property_id": "P3730",
+        "target_id": "Q152951"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q152956",
+        "entity_label": "brigadier general",
+        "relations": [
+          {
+            "source_id": "Q152956",
+            "property": "P1611",
+            "property_id": "P1611",
+            "target_id": "Q18536829"
+          },
+          {
+            "source_id": "Q152956",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q152956",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q1501868"
+          },
+          {
+            "source_id": "Q152956",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q8312481"
+          },
+          {
+            "source_id": "Q152956",
+            "property": "P3730",
+            "property_id": "P3730",
+            "target_id": "Q157148"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q6451204",
+        "entity_label": "two-star rank",
+        "relations": [
+          {
+            "source_id": "Q6451204",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q552345"
+          },
+          {
+            "source_id": "Q6451204",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q6451204",
+            "property": "P460",
+            "property_id": "P460",
+            "target_id": "Q3280545"
+          },
+          {
+            "source_id": "Q6451204",
+            "property": "P460",
+            "property_id": "P460",
+            "target_id": "Q1278830"
+          },
+          {
+            "source_id": "Q6451204",
+            "property": "P1611",
+            "property_id": "P1611",
+            "target_id": "Q18536830"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q104680",
+        "entity_label": "colonel",
+        "relations": [
+          {
+            "source_id": "Q104680",
+            "property": "P1611",
+            "property_id": "P1611",
+            "target_id": "Q18536827"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q1053745"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q678259"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q2041543"
+          },
+          {
+            "source_id": "Q104680",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q602358"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q2582912",
+        "entity_label": "senior colonel",
+        "relations": [
+          {
+            "source_id": "Q2582912",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q49865327"
+          },
+          {
+            "source_id": "Q2582912",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q56019"
+          },
+          {
+            "source_id": "Q2582912",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q104680"
+          },
+          {
+            "source_id": "Q2582912",
+            "property": "P1611",
+            "property_id": "P1611",
+            "target_id": "Q18536829"
+          },
+          {
+            "source_id": "Q2582912",
+            "property": "P5869",
+            "property_id": "P5869",
+            "target_id": "Q97279245"
+          }
+        ]
+      }
+    ]
+  },
+  "Q157873": {
+    "center_entity_id": "Q157873",
+    "center_entity_label": "Third Battle of Kharkov",
+    "radius_1": [
+      {
+        "source_id": "Q157873",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q189266"
+      },
+      {
+        "source_id": "Q157873",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q157873",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q42308"
+      },
+      {
+        "source_id": "Q157873",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q163244": {
+    "center_entity_id": "Q163244",
+    "center_entity_label": "Potsdam Declaration",
+    "radius_1": [
+      {
+        "source_id": "Q163244",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q163244",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q321839"
+      },
+      {
+        "source_id": "Q163244",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q277476"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q163417": {
+    "center_entity_id": "Q163417",
+    "center_entity_label": "",
+    "radius_1": [
+      {
+        "source_id": "Q163417",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q163417",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q7318"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q166218": {
+    "center_entity_id": "Q166218",
+    "center_entity_label": "Battle of Tacuarembó",
+    "radius_1": [
+      {
+        "source_id": "Q166218",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q166218",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q2356791"
+      },
+      {
+        "source_id": "Q166218",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q833016"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q166382": {
+    "center_entity_id": "Q166382",
+    "center_entity_label": "Amir",
+    "radius_1": [
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q678259"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q63284758"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4532138"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q3181656"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q20078554"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q867541"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q123560817"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q1097498"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q2747456"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q355567"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q4164871"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q56019"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q3320743"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q5374904"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P460",
+        "property_id": "P460",
+        "target_id": "Q1937846"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P140",
+        "property_id": "P140",
+        "target_id": "Q432"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P5008",
+        "property_id": "P5008",
+        "target_id": "Q6173448"
+      },
+      {
+        "source_id": "Q166382",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q8412698"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q166495": {
+    "center_entity_id": "Q166495",
+    "center_entity_label": "Catalonia Offensive",
+    "radius_1": [
+      {
+        "source_id": "Q166495",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q166495",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q10859"
+      },
+      {
+        "source_id": "Q166495",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q29"
+      },
+      {
+        "source_id": "Q166495",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q5705"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q166961": {
+    "center_entity_id": "Q166961",
+    "center_entity_label": "Battle of Shrewsbury",
+    "radius_1": [
+      {
+        "source_id": "Q166961",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q3811332"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "P1435",
+        "property_id": "P1435",
+        "target_id": "Q7309375"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q179876"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q179876"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q2063857"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q230791"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q1483510"
+      },
+      {
+        "source_id": "Q166961",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q4126360"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q167002": {
+    "center_entity_id": "Q167002",
+    "center_entity_label": "Operation Greif",
+    "radius_1": [
+      {
+        "source_id": "Q167002",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q167002",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q31"
+      },
+      {
+        "source_id": "Q167002",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q167002",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q13031010"
+      },
+      {
+        "source_id": "Q167002",
+        "property": "P837",
+        "property_id": "P837",
+        "target_id": "Q3042480"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q13031010",
+        "entity_label": "",
+        "relations": [
+          {
+            "source_id": "Q13031010",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q645883"
+          },
+          {
+            "source_id": "Q13031010",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q582956"
+          },
+          {
+            "source_id": "Q13031010",
+            "property": "location",
+            "property_id": "P276",
+            "target_id": "Q1245303"
+          },
+          {
+            "source_id": "Q13031010",
+            "property": "location",
+            "property_id": "P276",
+            "target_id": "Q1353622"
+          },
+          {
+            "source_id": "Q13031010",
+            "property": "P131",
+            "property_id": "P131",
+            "target_id": "Q102217"
+          }
+        ]
+      }
+    ]
+  },
+  "Q169991": {
+    "center_entity_id": "Q169991",
+    "center_entity_label": "",
+    "radius_1": [
+      {
+        "source_id": "Q169991",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q169991",
+        "property": "military branch",
+        "property_id": "P241",
+        "target_id": "Q557432"
+      },
+      {
+        "source_id": "Q169991",
+        "property": "P749",
+        "property_id": "P749",
+        "target_id": "Q19885639"
+      },
+      {
+        "source_id": "Q169991",
+        "property": "P749",
+        "property_id": "P749",
+        "target_id": "Q1640468"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q171374": {
+    "center_entity_id": "Q171374",
+    "center_entity_label": "Shackamaxon",
+    "radius_1": [
+      {
+        "source_id": "Q171374",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q171374",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q176216": {
+    "center_entity_id": "Q176216",
+    "center_entity_label": "Battle of Yellow Tavern",
+    "radius_1": [
+      {
+        "source_id": "Q176216",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q176216",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q8676"
+      },
+      {
+        "source_id": "Q176216",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q176216",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q341679"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q179288": {
+    "center_entity_id": "Q179288",
+    "center_entity_label": "Battle of Kosovo",
+    "radius_1": [
+      {
+        "source_id": "Q179288",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q1246"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q20988473"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q20988473"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q124737632"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q698985"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12560"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q9941968"
+      },
+      {
+        "source_id": "Q179288",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q229548"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q179591": {
+    "center_entity_id": "Q179591",
+    "center_entity_label": "Battle of Cannae",
+    "radius_1": [
+      {
+        "source_id": "Q179591",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q568611"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q913582"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q6271"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q1138524"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q857028"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q432244"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q554632"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q580979"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q36456"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q311702"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q463438"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q315274"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q1747689"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q2429397"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q608438"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q1747689"
+      },
+      {
+        "source_id": "Q179591",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q1569578"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q608438",
+        "entity_label": "Battle of Cannae (1018)",
+        "relations": [
+          {
+            "source_id": "Q608438",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q178561"
+          },
+          {
+            "source_id": "Q608438",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q12544"
+          },
+          {
+            "source_id": "Q608438",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q130900"
+          },
+          {
+            "source_id": "Q608438",
+            "property": "location",
+            "property_id": "P276",
+            "target_id": "Q568611"
+          },
+          {
+            "source_id": "Q608438",
+            "property": "P1889",
+            "property_id": "P1889",
+            "target_id": "Q179591"
+          }
+        ]
+      }
+    ]
+  },
+  "Q179670": {
+    "center_entity_id": "Q179670",
+    "center_entity_label": "Battle of Gaugamela",
+    "radius_1": [
+      {
+        "source_id": "Q179670",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q551888"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q180179"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q389688"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4532135"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q83958"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q332337"
+      },
+      {
+        "source_id": "Q179670",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q389688"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q181733": {
+    "center_entity_id": "Q181733",
+    "center_entity_label": "Praetorian Guard",
+    "radius_1": [
+      {
+        "source_id": "Q181733",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q7352201"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q2041543"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q30059240"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4532138"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q3181656"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q867541"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q1029706"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q851436"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q971045"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q11010841"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P1366",
+        "property_id": "P1366",
+        "target_id": "Q387075"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q1747689"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q17167"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "P2388",
+        "property_id": "P2388",
+        "target_id": "Q692343"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134462272"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134462292"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134462294"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134467462"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134467470"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134467471"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134467474"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134467477"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134467483"
+      },
+      {
+        "source_id": "Q181733",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q134487107"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q134462294",
+        "entity_label": "Cohors II Praetoria",
+        "relations": [
+          {
+            "source_id": "Q134462294",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q134462294",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q202167"
+          },
+          {
+            "source_id": "Q134462294",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q181733"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q11010841",
+        "entity_label": "imperial guard",
+        "relations": [
+          {
+            "source_id": "Q11010841",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q971045"
+          },
+          {
+            "source_id": "Q11010841",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q387075",
+        "entity_label": "Auxilia palatina",
+        "relations": [
+          {
+            "source_id": "Q387075",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q8280476"
+          },
+          {
+            "source_id": "Q387075",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q387075",
+            "property": "subclass of",
+            "property_id": "P279",
+            "target_id": "Q3739391"
+          },
+          {
+            "source_id": "Q387075",
+            "property": "P1365",
+            "property_id": "P1365",
+            "target_id": "Q181733"
+          },
+          {
+            "source_id": "Q387075",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q1747689"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q134487107",
+        "entity_label": "Cohors VII praetoria",
+        "relations": [
+          {
+            "source_id": "Q134487107",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q134487107",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q202167"
+          },
+          {
+            "source_id": "Q134487107",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q181733"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q134467471",
+        "entity_label": "Cohors X praetoria",
+        "relations": [
+          {
+            "source_id": "Q134467471",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q134467471",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q202167"
+          },
+          {
+            "source_id": "Q134467471",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q181733"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q134467462",
+        "entity_label": "Cohors VIII praetoria",
+        "relations": [
+          {
+            "source_id": "Q134467462",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q134467462",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q202167"
+          },
+          {
+            "source_id": "Q134467462",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q181733"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q134462272",
+        "entity_label": "Cohors IIII Praetoria",
+        "relations": [
+          {
+            "source_id": "Q134462272",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q134462272",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q202167"
+          },
+          {
+            "source_id": "Q134462272",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q181733"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q134467470",
+        "entity_label": "Cohors VIIII praetoria",
+        "relations": [
+          {
+            "source_id": "Q134467470",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q134467470",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q202167"
+          },
+          {
+            "source_id": "Q134467470",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q181733"
+          }
+        ]
+      },
+      {
+        "entity_id": "Q134462292",
+        "entity_label": "Cohors III Praetoria",
+        "relations": [
+          {
+            "source_id": "Q134462292",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q134462292",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q202167"
+          },
+          {
+            "source_id": "Q134462292",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q181733"
+          }
+        ]
+      }
+    ]
+  },
+  "Q182530": {
+    "center_entity_id": "Q182530",
+    "center_entity_label": "Battle of Badajoz",
+    "radius_1": [
+      {
+        "source_id": "Q182530",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q182530",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q10859"
+      },
+      {
+        "source_id": "Q182530",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q15679"
+      },
+      {
+        "source_id": "Q182530",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q31912880"
+      },
+      {
+        "source_id": "Q182530",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q29"
+      },
+      {
+        "source_id": "Q182530",
+        "property": "followed by",
+        "property_id": "P156",
+        "target_id": "Q3181920"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q182831": {
+    "center_entity_id": "Q182831",
+    "center_entity_label": "Battle of Schliengen",
+    "radius_1": [
+      {
+        "source_id": "Q182831",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q182831",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q18817"
+      },
+      {
+        "source_id": "Q182831",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q62037"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q188123": {
+    "center_entity_id": "Q188123",
+    "center_entity_label": "Battle of Villiers",
+    "radius_1": [
+      {
+        "source_id": "Q188123",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q188123",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q46083"
+      },
+      {
+        "source_id": "Q188123",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q258636"
+      },
+      {
+        "source_id": "Q188123",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q142"
+      },
+      {
+        "source_id": "Q188123",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q190310": {
+    "center_entity_id": "Q190310",
+    "center_entity_label": "Infantry School of the Reichswehr",
+    "radius_1": [
+      {
+        "source_id": "Q190310",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q190310",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q3914"
+      },
+      {
+        "source_id": "Q190310",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q190310",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q1726"
+      },
+      {
+        "source_id": "Q190310",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q1731"
+      },
+      {
+        "source_id": "Q190310",
+        "property": "operator",
+        "property_id": "P137",
+        "target_id": "Q157608"
+      },
+      {
+        "source_id": "Q190310",
+        "property": "followed by",
+        "property_id": "P156",
+        "target_id": "Q2015896"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q2015896",
+        "entity_label": "Army Officer Academy (Germany)",
+        "relations": [
+          {
+            "source_id": "Q2015896",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q183"
+          },
+          {
+            "source_id": "Q2015896",
+            "property": "P131",
+            "property_id": "P131",
+            "target_id": "Q1731"
+          },
+          {
+            "source_id": "Q2015896",
+            "property": "P131",
+            "property_id": "P131",
+            "target_id": "Q1715"
+          },
+          {
+            "source_id": "Q2015896",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q28739204"
+          },
+          {
+            "source_id": "Q2015896",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q42058516"
+          }
+        ]
+      }
+    ]
+  },
+  "Q190401": {
+    "center_entity_id": "Q190401",
+    "center_entity_label": "tribune",
+    "radius_1": [
+      {
+        "source_id": "Q190401",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q294414"
+      },
+      {
+        "source_id": "Q190401",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q56019"
+      },
+      {
+        "source_id": "Q190401",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q1747689"
+      },
+      {
+        "source_id": "Q190401",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q30059240"
+      },
+      {
+        "source_id": "Q190401",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q867541"
+      },
+      {
+        "source_id": "Q190401",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q16082057"
+      },
+      {
+        "source_id": "Q190401",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q20778343"
+      },
+      {
+        "source_id": "Q190401",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q125094385"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q191177": {
+    "center_entity_id": "Q191177",
+    "center_entity_label": "Zentrum Innere Führung",
+    "radius_1": [
+      {
+        "source_id": "Q191177",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q3104"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q28738668"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P749",
+        "property_id": "P749",
+        "target_id": "Q493353"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P355",
+        "property_id": "P355",
+        "target_id": "Q15136163"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q18410412"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q66353"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q18411176"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q10295244"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q18412176"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q18411524"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q18029571"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q1221815"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q18018155"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q17126549"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q1576770"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q15444734"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q2156544"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q16937577"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q1717814"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q2141205"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q21033799"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q28114498"
+      },
+      {
+        "source_id": "Q191177",
+        "property": "P101",
+        "property_id": "P101",
+        "target_id": "Q736632"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q191577": {
+    "center_entity_id": "Q191577",
+    "center_entity_label": "Operation Morvarid",
+    "radius_1": [
+      {
+        "source_id": "Q191577",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q645883"
+      },
+      {
+        "source_id": "Q191577",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1261499"
+      },
+      {
+        "source_id": "Q191577",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1897017"
+      },
+      {
+        "source_id": "Q191577",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q82664"
+      },
+      {
+        "source_id": "Q191577",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q34675"
+      },
+      {
+        "source_id": "Q191577",
+        "property": "P3082",
+        "property_id": "P3082",
+        "target_id": "Q898671"
+      },
+      {
+        "source_id": "Q191577",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q794"
+      },
+      {
+        "source_id": "Q191577",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q796"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q898671",
+        "entity_label": "Iraqi Navy",
+        "relations": [
+          {
+            "source_id": "Q898671",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q8553382"
+          },
+          {
+            "source_id": "Q898671",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q4508"
+          },
+          {
+            "source_id": "Q898671",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q796"
+          },
+          {
+            "source_id": "Q898671",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q15611742"
+          },
+          {
+            "source_id": "Q898671",
+            "property": "headquarters location",
+            "property_id": "P159",
+            "target_id": "Q5027657"
+          }
+        ]
+      }
+    ]
+  },
+  "Q192473": {
+    "center_entity_id": "Q192473",
+    "center_entity_label": "Battle of Adrianople",
+    "radius_1": [
+      {
+        "source_id": "Q192473",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q43387"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q1366196"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q1747689"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "P2348",
+        "property_id": "P2348",
+        "target_id": "Q2277"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q16931381"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q221374"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q1747689"
+      },
+      {
+        "source_id": "Q192473",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q42193"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q194110": {
+    "center_entity_id": "Q194110",
+    "center_entity_label": "Nanfan Treaty",
+    "radius_1": [
+      {
+        "source_id": "Q194110",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q194110",
+        "property": "P195",
+        "property_id": "P195",
+        "target_id": "Q392703"
+      },
+      {
+        "source_id": "Q194110",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q1421590"
+      },
+      {
+        "source_id": "Q194110",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q161885"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q196726": {
+    "center_entity_id": "Q196726",
+    "center_entity_label": "Destroyer War Badge",
+    "radius_1": [
+      {
+        "source_id": "Q196726",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1788716"
+      },
+      {
+        "source_id": "Q196726",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q18328097"
+      },
+      {
+        "source_id": "Q196726",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1152354"
+      },
+      {
+        "source_id": "Q196726",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q7318"
+      },
+      {
+        "source_id": "Q196726",
+        "property": "P2517",
+        "property_id": "P2517",
+        "target_id": "Q124948486"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q199371": {
+    "center_entity_id": "Q199371",
+    "center_entity_label": "Battle of Megiddo",
+    "radius_1": [
+      {
+        "source_id": "Q199371",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q727536"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q218907"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q763829"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q2463859"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q430776"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q1294629"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q23792"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12560"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q3240725"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q7100466"
+      },
+      {
+        "source_id": "Q199371",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q12560"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q201587": {
+    "center_entity_id": "Q201587",
+    "center_entity_label": "Act of Seclusion",
+    "radius_1": [
+      {
+        "source_id": "Q201587",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q55"
+      },
+      {
+        "source_id": "Q201587",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q201587",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q170072"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q204636": {
+    "center_entity_id": "Q204636",
+    "center_entity_label": "Battle of Plataea",
+    "radius_1": [
+      {
+        "source_id": "Q204636",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q204636",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q8292897"
+      },
+      {
+        "source_id": "Q204636",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q1122337"
+      },
+      {
+        "source_id": "Q204636",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q76026"
+      },
+      {
+        "source_id": "Q204636",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q742538"
+      },
+      {
+        "source_id": "Q204636",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q41"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q205887": {
+    "center_entity_id": "Q205887",
+    "center_entity_label": "Battle of Carrhae",
+    "radius_1": [
+      {
+        "source_id": "Q205887",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q205887",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q199547"
+      },
+      {
+        "source_id": "Q205887",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q1747689"
+      },
+      {
+        "source_id": "Q205887",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q175121"
+      },
+      {
+        "source_id": "Q205887",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q1986139"
+      },
+      {
+        "source_id": "Q205887",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q4346192"
+      },
+      {
+        "source_id": "Q205887",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q210248": {
+    "center_entity_id": "Q210248",
+    "center_entity_label": "Königlich Bayerisches 2. Jägerbataillon",
+    "radius_1": [
+      {
+        "source_id": "Q210248",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q210248",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q210248",
+        "property": "P749",
+        "property_id": "P749",
+        "target_id": "Q260402"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q210404": {
+    "center_entity_id": "Q210404",
+    "center_entity_label": "2nd Panzer Army",
+    "radius_1": [
+      {
+        "source_id": "Q210404",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q6176645"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "P1365",
+        "property_id": "P1365",
+        "target_id": "Q2636846"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q7318"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "P945",
+        "property_id": "P945",
+        "target_id": "Q7318"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "P101",
+        "property_id": "P101",
+        "target_id": "Q585959"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "military branch",
+        "property_id": "P241",
+        "target_id": "Q128781"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q210386"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q701923"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "P366",
+        "property_id": "P366",
+        "target_id": "Q568312"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "P2868",
+        "property_id": "P2868",
+        "target_id": "Q568312"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "P4791",
+        "property_id": "P4791",
+        "target_id": "Q70560"
+      },
+      {
+        "source_id": "Q210404",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q4451214"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q2636846",
+        "entity_label": "",
+        "relations": [
+          {
+            "source_id": "Q2636846",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q6176646"
+          },
+          {
+            "source_id": "Q2636846",
+            "property": "P1366",
+            "property_id": "P1366",
+            "target_id": "Q210404"
+          },
+          {
+            "source_id": "Q2636846",
+            "property": "participated in conflict",
+            "property_id": "P607",
+            "target_id": "Q362"
+          },
+          {
+            "source_id": "Q2636846",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q176799"
+          },
+          {
+            "source_id": "Q2636846",
+            "property": "P945",
+            "property_id": "P945",
+            "target_id": "Q7318"
+          }
+        ]
+      }
+    ]
+  },
+  "Q210423": {
+    "center_entity_id": "Q210423",
+    "center_entity_label": "Battle of Xiaoyao Ford",
+    "radius_1": [
+      {
+        "source_id": "Q210423",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q210423",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q185684"
+      },
+      {
+        "source_id": "Q210423",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q148"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q211211": {
+    "center_entity_id": "Q211211",
+    "center_entity_label": "Battle of Kelja",
+    "radius_1": [
+      {
+        "source_id": "Q211211",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q211211",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q134949"
+      },
+      {
+        "source_id": "Q211211",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q2626296"
+      },
+      {
+        "source_id": "Q211211",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q11870797"
+      },
+      {
+        "source_id": "Q211211",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q33"
+      },
+      {
+        "source_id": "Q211211",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q15180"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q215669": {
+    "center_entity_id": "Q215669",
+    "center_entity_label": "Allies of the First World War",
+    "radius_1": [
+      {
+        "source_id": "Q215669",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q361"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q177859"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q31"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q386496"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q172579"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q167360"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q203493"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q209065"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q13426199"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "participant in",
+        "property_id": "P1344",
+        "target_id": "Q361"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1127126"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q19953632"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "P461",
+        "property_id": "P461",
+        "target_id": "Q152283"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "P461",
+        "property_id": "P461",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "P461",
+        "property_id": "P461",
+        "target_id": "Q28513"
+      },
+      {
+        "source_id": "Q215669",
+        "property": "P461",
+        "property_id": "P461",
+        "target_id": "Q12560"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q219438": {
+    "center_entity_id": "Q219438",
+    "center_entity_label": "Montreal Protocol",
+    "radius_1": [
+      {
+        "source_id": "Q219438",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q5381350"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "follows",
+        "property_id": "P155",
+        "target_id": "Q686455"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P2058",
+        "property_id": "P2058",
+        "target_id": "Q81066"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P1001",
+        "property_id": "P1001",
+        "target_id": "Q13780930"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P921",
+        "property_id": "P921",
+        "target_id": "Q183140"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P921",
+        "property_id": "P921",
+        "target_id": "Q960800"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P2567",
+        "property_id": "P2567",
+        "target_id": "Q1637294"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P2567",
+        "property_id": "P2567",
+        "target_id": "Q3408067"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P2567",
+        "property_id": "P2567",
+        "target_id": "Q28499112"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P291",
+        "property_id": "P291",
+        "target_id": "Q340"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P407",
+        "property_id": "P407",
+        "target_id": "Q7850"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q326303"
+      },
+      {
+        "source_id": "Q219438",
+        "property": "P9234",
+        "property_id": "P9234",
+        "target_id": "Q686455"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q219712": {
+    "center_entity_id": "Q219712",
+    "center_entity_label": "Imperial Japanese Navy",
+    "radius_1": [
+      {
+        "source_id": "Q219712",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q7431253"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q4508"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q188712"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "followed by",
+        "property_id": "P156",
+        "target_id": "Q731647"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q703942"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q178687"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q159950"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q361"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q170314"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q11558758"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q4636768"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q4641306"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q4639280"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q4596340"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P1830",
+        "property_id": "P1830",
+        "target_id": "Q370337"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P1830",
+        "property_id": "P1830",
+        "target_id": "Q2342404"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P1830",
+        "property_id": "P1830",
+        "target_id": "Q3886454"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P1830",
+        "property_id": "P1830",
+        "target_id": "Q4381793"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P2354",
+        "property_id": "P2354",
+        "target_id": "Q457331"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P1424",
+        "property_id": "P1424",
+        "target_id": "Q13403135"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P1424",
+        "property_id": "P1424",
+        "target_id": "Q10583659"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q6139796"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P121",
+        "property_id": "P121",
+        "target_id": "Q105999113"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P2184",
+        "property_id": "P2184",
+        "target_id": "Q11435719"
+      },
+      {
+        "source_id": "Q219712",
+        "property": "P163",
+        "property_id": "P163",
+        "target_id": "Q11435720"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q221469": {
+    "center_entity_id": "Q221469",
+    "center_entity_label": "First Battle of Bull Run",
+    "radius_1": [
+      {
+        "source_id": "Q221469",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q8676"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q341915"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q6747016"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q3355619"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q5452571"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q5452572"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q9173228"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q867541"
+      },
+      {
+        "source_id": "Q221469",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19077875"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q225687": {
+    "center_entity_id": "Q225687",
+    "center_entity_label": "32nd Wing",
+    "radius_1": [
+      {
+        "source_id": "Q225687",
+        "property": "military branch",
+        "property_id": "P241",
+        "target_id": "Q381576"
+      },
+      {
+        "source_id": "Q225687",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q38"
+      },
+      {
+        "source_id": "Q225687",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q233242": {
+    "center_entity_id": "Q233242",
+    "center_entity_label": "Second Battle of the Isonzo",
+    "radius_1": [
+      {
+        "source_id": "Q233242",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q233242",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q38"
+      },
+      {
+        "source_id": "Q233242",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q681517"
+      },
+      {
+        "source_id": "Q233242",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q202760"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q681517",
+        "entity_label": "Battles of the Isonzo",
+        "relations": [
+          {
+            "source_id": "Q681517",
+            "property": "P138",
+            "property_id": "P138",
+            "target_id": "Q202760"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q8293540"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q38"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q215"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q659745"
+          }
+        ]
+      }
+    ]
+  },
+  "Q233278": {
+    "center_entity_id": "Q233278",
+    "center_entity_label": "Operation Spark",
+    "radius_1": [
+      {
+        "source_id": "Q233278",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q645883"
+      },
+      {
+        "source_id": "Q233278",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q233278",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q151860"
+      },
+      {
+        "source_id": "Q233278",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q656"
+      },
+      {
+        "source_id": "Q233278",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q3355565"
+      },
+      {
+        "source_id": "Q233278",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q911679"
+      },
+      {
+        "source_id": "Q233278",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q159"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q233356": {
+    "center_entity_id": "Q233356",
+    "center_entity_label": "Battle of Lacolle Mills",
+    "radius_1": [
+      {
+        "source_id": "Q233356",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q233356",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q16"
+      },
+      {
+        "source_id": "Q233356",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q3215834"
+      },
+      {
+        "source_id": "Q233356",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q18571979"
+      },
+      {
+        "source_id": "Q233356",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q26013"
+      },
+      {
+        "source_id": "Q233356",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q233356",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q174193"
+      },
+      {
+        "source_id": "Q233356",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q1361990"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q1361990",
+        "entity_label": "Battle of Lacolle Mills",
+        "relations": [
+          {
+            "source_id": "Q1361990",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q178561"
+          },
+          {
+            "source_id": "Q1361990",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q16"
+          },
+          {
+            "source_id": "Q1361990",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q26013"
+          },
+          {
+            "source_id": "Q1361990",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q30"
+          },
+          {
+            "source_id": "Q1361990",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q174193"
+          }
+        ]
+      }
+    ]
+  },
+  "Q233421": {
+    "center_entity_id": "Q233421",
+    "center_entity_label": "Second Battle of Villmergen",
+    "radius_1": [
+      {
+        "source_id": "Q233421",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q233421",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q690096"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q233426": {
+    "center_entity_id": "Q233426",
+    "center_entity_label": "Second Battle of Zurich",
+    "radius_1": [
+      {
+        "source_id": "Q233426",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q233426",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q72"
+      },
+      {
+        "source_id": "Q233426",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q26749"
+      },
+      {
+        "source_id": "Q233426",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      },
+      {
+        "source_id": "Q233426",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q233426",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q39"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q242644": {
+    "center_entity_id": "Q242644",
+    "center_entity_label": "Battle of Caporetto",
+    "radius_1": [
+      {
+        "source_id": "Q242644",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q681517"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q361"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q3618115"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q38"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q172579"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q28513"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q43287"
+      },
+      {
+        "source_id": "Q242644",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q3618115"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q681517",
+        "entity_label": "Battles of the Isonzo",
+        "relations": [
+          {
+            "source_id": "Q681517",
+            "property": "P138",
+            "property_id": "P138",
+            "target_id": "Q202760"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q8293540"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q38"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q215"
+          },
+          {
+            "source_id": "Q681517",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q659745"
+          }
+        ]
+      }
+    ]
+  },
+  "Q243799": {
+    "center_entity_id": "Q243799",
+    "center_entity_label": "Franco-Russian Alliance",
+    "radius_1": [
+      {
+        "source_id": "Q243799",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q243799",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q34266"
+      },
+      {
+        "source_id": "Q243799",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q70802"
+      },
+      {
+        "source_id": "Q243799",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q120180"
+      },
+      {
+        "source_id": "Q243799",
+        "property": "P1891",
+        "property_id": "P1891",
+        "target_id": "Q296076"
+      },
+      {
+        "source_id": "Q243799",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q243799",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q245831": {
+    "center_entity_id": "Q245831",
+    "center_entity_label": "Cyprus problem",
+    "radius_1": [
+      {
+        "source_id": "Q245831",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q9205331"
+      },
+      {
+        "source_id": "Q245831",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q180684"
+      },
+      {
+        "source_id": "Q245831",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q229"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q248712": {
+    "center_entity_id": "Q248712",
+    "center_entity_label": "Battle of Komarów",
+    "radius_1": [
+      {
+        "source_id": "Q248712",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q154573"
+      },
+      {
+        "source_id": "Q248712",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q248712",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q2309210"
+      },
+      {
+        "source_id": "Q248712",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q145972"
+      },
+      {
+        "source_id": "Q248712",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q3491891"
+      },
+      {
+        "source_id": "Q248712",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q36"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q249860": {
+    "center_entity_id": "Q249860",
+    "center_entity_label": "Strafbattalion",
+    "radius_1": [
+      {
+        "source_id": "Q249860",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q1306981"
+      },
+      {
+        "source_id": "Q249860",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q249860",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q249860",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q249860",
+        "property": "P945",
+        "property_id": "P945",
+        "target_id": "Q7318"
+      },
+      {
+        "source_id": "Q249860",
+        "property": "military branch",
+        "property_id": "P241",
+        "target_id": "Q2448192"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q251184": {
+    "center_entity_id": "Q251184",
+    "center_entity_label": "Battle of Signal Hill",
+    "radius_1": [
+      {
+        "source_id": "Q251184",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q251184",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q33143"
+      },
+      {
+        "source_id": "Q251184",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q2082"
+      },
+      {
+        "source_id": "Q251184",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q142"
+      },
+      {
+        "source_id": "Q251184",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q161885"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q254797": {
+    "center_entity_id": "Q254797",
+    "center_entity_label": "Battle of Le Bourget",
+    "radius_1": [
+      {
+        "source_id": "Q254797",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q254797",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q46083"
+      },
+      {
+        "source_id": "Q254797",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q272906"
+      },
+      {
+        "source_id": "Q254797",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q142"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q255087": {
+    "center_entity_id": "Q255087",
+    "center_entity_label": "43rd Battalion Virginia Cavalry",
+    "radius_1": [
+      {
+        "source_id": "Q255087",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q255087",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q8676"
+      },
+      {
+        "source_id": "Q255087",
+        "property": "military branch",
+        "property_id": "P241",
+        "target_id": "Q1125021"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q255546": {
+    "center_entity_id": "Q255546",
+    "center_entity_label": "vanguard",
+    "radius_1": [
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q20078554"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q1970746"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q2657718"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19219752"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4532138"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q51977"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q230995"
+      },
+      {
+        "source_id": "Q255546",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q257137": {
+    "center_entity_id": "Q257137",
+    "center_entity_label": "Battle of Newtownmountkennedy",
+    "radius_1": [
+      {
+        "source_id": "Q257137",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q257137",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q944941"
+      },
+      {
+        "source_id": "Q257137",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q1893671"
+      },
+      {
+        "source_id": "Q257137",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q215530"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q265098": {
+    "center_entity_id": "Q265098",
+    "center_entity_label": "I Royal Bavarian Corps",
+    "radius_1": [
+      {
+        "source_id": "Q265098",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q265098",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      },
+      {
+        "source_id": "Q265098",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q361"
+      },
+      {
+        "source_id": "Q265098",
+        "property": "P355",
+        "property_id": "P355",
+        "target_id": "Q162948"
+      },
+      {
+        "source_id": "Q265098",
+        "property": "P355",
+        "property_id": "P355",
+        "target_id": "Q210240"
+      },
+      {
+        "source_id": "Q265098",
+        "property": "P355",
+        "property_id": "P355",
+        "target_id": "Q1297372"
+      },
+      {
+        "source_id": "Q265098",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q980"
+      },
+      {
+        "source_id": "Q265098",
+        "property": "subclass of",
+        "property_id": "P279",
+        "target_id": "Q188497"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q267167": {
+    "center_entity_id": "Q267167",
+    "center_entity_label": "Polish Navy",
+    "radius_1": [
+      {
+        "source_id": "Q267167",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q9013512"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q4508"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q36"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q282696"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q385"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "P2354",
+        "property_id": "P2354",
+        "target_id": "Q4352882"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q79819908"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "military branch",
+        "property_id": "P241",
+        "target_id": "Q4508"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "P121",
+        "property_id": "P121",
+        "target_id": "Q105624127"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q106638547"
+      },
+      {
+        "source_id": "Q267167",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q7209957"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q273480": {
+    "center_entity_id": "Q273480",
+    "center_entity_label": "École Militaire",
+    "radius_1": [
+      {
+        "source_id": "Q273480",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1497364"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q917182"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1935049"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q78634583"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q142"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P1435",
+        "property_id": "P1435",
+        "target_id": "Q10387684"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q20869926"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P131",
+        "property_id": "P131",
+        "target_id": "Q3413187"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P84",
+        "property_id": "P84",
+        "target_id": "Q352451"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P7561",
+        "property_id": "P7561",
+        "target_id": "Q86119327"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q3578049"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P149",
+        "property_id": "P149",
+        "target_id": "Q840829"
+      },
+      {
+        "source_id": "Q273480",
+        "property": "P912",
+        "property_id": "P912",
+        "target_id": "Q129165885"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q277036": {
+    "center_entity_id": "Q277036",
+    "center_entity_label": "People's Defense Units",
+    "radius_1": [
+      {
+        "source_id": "Q277036",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q18071930"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q178810"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q1842866"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "participated in conflict",
+        "property_id": "P607",
+        "target_id": "Q17984356"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q858"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q153936"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q21471116"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q21096224"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P945",
+        "property_id": "P945",
+        "target_id": "Q619829"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P945",
+        "property_id": "P945",
+        "target_id": "Q864766"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P3461",
+        "property_id": "P3461",
+        "target_id": "Q43"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P7047",
+        "property_id": "P7047",
+        "target_id": "Q2429253"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P172",
+        "property_id": "P172",
+        "target_id": "Q12223"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q978829"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "headquarters location",
+        "property_id": "P159",
+        "target_id": "Q858"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P37",
+        "property_id": "P37",
+        "target_id": "Q36368"
+      },
+      {
+        "source_id": "Q277036",
+        "property": "P163",
+        "property_id": "P163",
+        "target_id": "Q110262901"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q1842866",
+        "entity_label": "Battle of Aleppo",
+        "relations": [
+          {
+            "source_id": "Q1842866",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q178561"
+          },
+          {
+            "source_id": "Q1842866",
+            "property": "part of",
+            "property_id": "P361",
+            "target_id": "Q178810"
+          },
+          {
+            "source_id": "Q1842866",
+            "property": "location",
+            "property_id": "P276",
+            "target_id": "Q41183"
+          },
+          {
+            "source_id": "Q1842866",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q849180"
+          },
+          {
+            "source_id": "Q1842866",
+            "property": "participant",
+            "property_id": "P710",
+            "target_id": "Q16949874"
+          }
+        ]
+      }
+    ]
+  },
+  "Q277337": {
+    "center_entity_id": "Q277337",
+    "center_entity_label": "Battle of Changjin Reservoir",
+    "radius_1": [
+      {
+        "source_id": "Q277337",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q8663"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q15925263"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q145"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q55291921"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q12614724"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q12614724"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "P4220",
+        "property_id": "P4220",
+        "target_id": "Q4870738"
+      },
+      {
+        "source_id": "Q277337",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q423"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q283984": {
+    "center_entity_id": "Q283984",
+    "center_entity_label": "Battle of Ihtiman",
+    "radius_1": [
+      {
+        "source_id": "Q283984",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q283984",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q3622689"
+      },
+      {
+        "source_id": "Q283984",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q405712"
+      },
+      {
+        "source_id": "Q283984",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12560"
+      },
+      {
+        "source_id": "Q283984",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q420759"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q284269": {
+    "center_entity_id": "Q284269",
+    "center_entity_label": "Operation Barclay",
+    "radius_1": [
+      {
+        "source_id": "Q284269",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q170028"
+      },
+      {
+        "source_id": "Q284269",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q645883"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q286436": {
+    "center_entity_id": "Q286436",
+    "center_entity_label": "Al-Qaeda insurgency in Yemen",
+    "radius_1": [
+      {
+        "source_id": "Q286436",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q6912226"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q180684"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q204391"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q985181"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q328180"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q7399872"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q6967154"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q309998"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q2635866"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q200964"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q516655"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q57480"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q639225"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q7267019"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q3163292"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q4216981"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q19864348"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q16730015"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q124815556"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q5154491"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q15946570"
+      },
+      {
+        "source_id": "Q286436",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q805"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q286471": {
+    "center_entity_id": "Q286471",
+    "center_entity_label": "Order of Suvorov",
+    "radius_1": [
+      {
+        "source_id": "Q286471",
+        "property": "P138",
+        "property_id": "P138",
+        "target_id": "Q154232"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q193622"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q1788716"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q9679956"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q15180"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P1424",
+        "property_id": "P1424",
+        "target_id": "Q26265741"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q3342380"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q4335980"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q2376553"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P2517",
+        "property_id": "P2517",
+        "target_id": "Q8638391"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q21292820"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q21292821"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q21292823"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P3730",
+        "property_id": "P3730",
+        "target_id": "Q337463"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P3729",
+        "property_id": "P3729",
+        "target_id": "Q973379"
+      },
+      {
+        "source_id": "Q286471",
+        "property": "P740",
+        "property_id": "P740",
+        "target_id": "Q649"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q4335980",
+        "entity_label": "Order of Suvorov",
+        "relations": [
+          {
+            "source_id": "Q4335980",
+            "property": "P910",
+            "property_id": "P910",
+            "target_id": "Q9679960"
+          },
+          {
+            "source_id": "Q4335980",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q193622"
+          },
+          {
+            "source_id": "Q4335980",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q1788716"
+          },
+          {
+            "source_id": "Q4335980",
+            "property": "country",
+            "property_id": "P17",
+            "target_id": "Q907112"
+          },
+          {
+            "source_id": "Q4335980",
+            "property": "P1889",
+            "property_id": "P1889",
+            "target_id": "Q286471"
+          }
+        ]
+      }
+    ]
+  },
+  "Q288345": {
+    "center_entity_id": "Q288345",
+    "center_entity_label": "Battle of Lincoln",
+    "radius_1": [
+      {
+        "source_id": "Q288345",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q288345",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q743768"
+      },
+      {
+        "source_id": "Q288345",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q180057"
+      },
+      {
+        "source_id": "Q288345",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q179876"
+      },
+      {
+        "source_id": "Q288345",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q179876"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q296754": {
+    "center_entity_id": "Q296754",
+    "center_entity_label": "Battle of Singapore",
+    "radius_1": [
+      {
+        "source_id": "Q296754",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q362"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q184425"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q4420036"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q55293691"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q145"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q188712"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q408"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q129286"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q871091"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q4420036"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "P1542",
+        "property_id": "P1542",
+        "target_id": "Q715645"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "P1542",
+        "property_id": "P1542",
+        "target_id": "Q716144"
+      },
+      {
+        "source_id": "Q296754",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q871091"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q301248": {
+    "center_entity_id": "Q301248",
+    "center_entity_label": "Aargau monastery dispute",
+    "radius_1": [
+      {
+        "source_id": "Q301248",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q180684"
+      },
+      {
+        "source_id": "Q301248",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q39"
+      },
+      {
+        "source_id": "Q301248",
+        "property": "has part",
+        "property_id": "P527",
+        "target_id": "Q133781173"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q303976": {
+    "center_entity_id": "Q303976",
+    "center_entity_label": "National Intelligence Service",
+    "radius_1": [
+      {
+        "source_id": "Q303976",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q47913"
+      },
+      {
+        "source_id": "Q303976",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q9260658"
+      },
+      {
+        "source_id": "Q303976",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q41"
+      },
+      {
+        "source_id": "Q303976",
+        "property": "headquarters location",
+        "property_id": "P159",
+        "target_id": "Q1524"
+      },
+      {
+        "source_id": "Q303976",
+        "property": "P1037",
+        "property_id": "P1037",
+        "target_id": "Q113489148"
+      },
+      {
+        "source_id": "Q303976",
+        "property": "P2388",
+        "property_id": "P2388",
+        "target_id": "Q23698350"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q306535": {
+    "center_entity_id": "Q306535",
+    "center_entity_label": "Austrian State Treaty",
+    "radius_1": [
+      {
+        "source_id": "Q306535",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q131569"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q211818"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q40"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q15180"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q30"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q142"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q145"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q40"
+      },
+      {
+        "source_id": "Q306535",
+        "property": "P1889",
+        "property_id": "P1889",
+        "target_id": "Q227362"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q310254": {
+    "center_entity_id": "Q310254",
+    "center_entity_label": "Imperial-Royal Landwehr",
+    "radius_1": [
+      {
+        "source_id": "Q310254",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q176799"
+      },
+      {
+        "source_id": "Q310254",
+        "property": "follows",
+        "property_id": "P155",
+        "target_id": "Q3732945"
+      },
+      {
+        "source_id": "Q310254",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q28513"
+      },
+      {
+        "source_id": "Q310254",
+        "property": "P910",
+        "property_id": "P910",
+        "target_id": "Q60899941"
+      }
+    ],
+    "radius_2": []
+  },
+  "Q312212": {
+    "center_entity_id": "Q312212",
+    "center_entity_label": "Battle of Nördlingen",
+    "radius_1": [
+      {
+        "source_id": "Q312212",
+        "property": "instance of",
+        "property_id": "P31",
+        "target_id": "Q178561"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "part of",
+        "property_id": "P361",
+        "target_id": "Q2487"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "location",
+        "property_id": "P276",
+        "target_id": "Q489902"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q766543"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q12548"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q731814"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q256961"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q155019"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q215443"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "participant",
+        "property_id": "P710",
+        "target_id": "Q523454"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q602358"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19180675"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q4114391"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "P1343",
+        "property_id": "P1343",
+        "target_id": "Q19190511"
+      },
+      {
+        "source_id": "Q312212",
+        "property": "country",
+        "property_id": "P17",
+        "target_id": "Q183"
+      }
+    ],
+    "radius_2": [
+      {
+        "entity_id": "Q731814",
+        "entity_label": "Catholic League",
+        "relations": [
+          {
+            "source_id": "Q731814",
+            "property": "P1343",
+            "property_id": "P1343",
+            "target_id": "Q19538713"
+          },
+          {
+            "source_id": "Q731814",
+            "property": "instance of",
+            "property_id": "P31",
+            "target_id": "Q1127126"
+          },
+          {
+            "source_id": "Q731814",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q47261"
+          },
+          {
+            "source_id": "Q731814",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q173863"
+          },
+          {
+            "source_id": "Q731814",
+            "property": "has part",
+            "property_id": "P527",
+            "target_id": "Q566315"
+          }
+        ]
+      }
+    ]
+  }
+}

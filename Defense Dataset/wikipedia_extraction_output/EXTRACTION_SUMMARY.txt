@@ -1,0 +1,21 @@
+============================================================
+WIKIPEDIA TEXT EXTRACTION SUMMARY
+============================================================
+
+Date: 2025-12-15 13:14:16
+
+Input Statistics:
+  Total entities: 41425
+  Entities with Wikipedia: 20818
+
+Extraction Results:
+  Successfully extracted: 20808
+  Failed: 0
+  Success rate: 99.95%
+
+Content Statistics:
+  Total text: 160,499,171 chars
+  Avg text per page: 7,713 chars
+  Avg sections per page: 4.8
+
+============================================================

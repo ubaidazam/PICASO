@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "picaso"
+version = "0.1.0"
+description = "PICASO: Probabilistic Conceptual Spaces Sensemaking under Uncertainty"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "tqdm",
+    "psutil",
+]
+
+[project.optional-dependencies]
+viz = ["matplotlib", "seaborn"]
+
+[tool.setuptools.packages.find]
+include = ["picaso*"]

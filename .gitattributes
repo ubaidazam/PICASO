@@ -1,0 +1,6 @@
+Defense[[:space:]]Dataset/Wikidata_output/entity_relations.json filter=lfs diff=lfs merge=lfs -text
+Defense[[:space:]]Dataset/Wikidata_output/defence_entities.json filter=lfs diff=lfs merge=lfs -text
+Defense[[:space:]]Dataset/Wikidata_output/entity_subgraphs.json filter=lfs diff=lfs merge=lfs -text
+Defense[[:space:]]Dataset/wikipedia_extraction_output/wikipedia_all_entities.json filter=lfs diff=lfs merge=lfs -text
+Defense[[:space:]]Dataset/Wikidata_output/defence_entities.csv filter=lfs diff=lfs merge=lfs -text
+Defense[[:space:]]Dataset/wikipedia_extraction_output/defence_entities_enriched.csv filter=lfs diff=lfs merge=lfs -text
