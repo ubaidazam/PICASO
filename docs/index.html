@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PICASO - Probabilistic Conceptual Spaces for Sensemaking Under Uncertainty</title>
+    <meta name="description" content="PICASO models knowledge as probability clouds instead of rigid points, achieving state-of-the-art accuracy with built-in uncertainty quantification for high-stakes decision-making.">
+    <style>
+        /* ── Palette & Variables ── */
+        :root {
+            --bg: #f6f8fb;
+            --surface: #ffffff;
+            --text: #1e293b;
+            --text-secondary: #64748b;
+            --primary: #1e3a5f;
+            --primary-light: #2563eb;
+            --accent: #0ea5e9;
+            --accent-glow: rgba(14,165,233,0.15);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --border: #e2e8f0;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 24px rgba(0,0,0,0.08);
+            --shadow-lg: 0 12px 48px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ── Reset & Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img { max-width: 100%; }
+        a { color: var(--primary-light); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* ── Typography ── */
+        h1, h2, h3, h4 { line-height: 1.25; font-weight: 700; }
+        h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); letter-spacing: -0.03em; }
+        h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -0.02em; }
+        h3 { font-size: 1.25rem; }
+
+        p { margin-bottom: 1.25rem; }
+
+        /* ── Navigation ── */
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition);
+        }
+
+        .nav-inner {
+            max-width: 1100px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0.75rem 2rem;
+        }
+
+        .nav-logo {
+            font-weight: 800; font-size: 1.2rem; color: var(--primary);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-logo span { color: var(--accent); }
+
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a {
+            font-size: 0.88rem; font-weight: 500; color: var(--text-secondary);
+            transition: color 0.2s;
+        }
+        .nav-links a:hover { color: var(--primary); text-decoration: none; }
+
+        /* ── Hero ── */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #1e40af 100%);
+            color: white;
+            padding: 8rem 2rem 5rem;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background:
+                radial-gradient(ellipse 600px 400px at 20% 50%, rgba(14,165,233,0.15), transparent),
+                radial-gradient(ellipse 500px 500px at 80% 30%, rgba(99,102,241,0.12), transparent);
+        }
+
+        .hero-content { position: relative; max-width: 800px; margin: 0 auto; }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 50px;
+            padding: 0.35rem 1.2rem;
+            font-size: 0.82rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            backdrop-filter: blur(8px);
+        }
+
+        .hero h1 { margin-bottom: 1rem; }
+        .hero .subtitle {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            opacity: 0.85;
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+            font-weight: 400;
+        }
+
+        .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px; font-weight: 600; font-size: 0.95rem;
+            transition: var(--transition); cursor: pointer; border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent); color: white;
+            box-shadow: 0 4px 14px rgba(14,165,233,0.4);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(14,165,233,0.5); text-decoration: none; }
+
+        .btn-outline {
+            background: transparent; color: white;
+            border: 2px solid rgba(255,255,255,0.35);
+        }
+        .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.6); text-decoration: none; }
+
+        /* ── Floating particles in hero ── */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+            animation: float-particle linear infinite;
+        }
+
+        @keyframes float-particle {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* ── Main Content ── */
+        .content {
+            max-width: 1100px; margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ── Article Card ── */
+        .article {
+            background: var(--surface);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            padding: clamp(2rem, 5vw, 4rem);
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .article-meta {
+            display: flex; align-items: center; gap: 1rem;
+            margin-bottom: 2rem;
+            font-size: 0.85rem; color: var(--text-secondary);
+        }
+
+        .article-meta .tag {
+            background: var(--accent-glow);
+            color: var(--primary-light);
+            padding: 0.2rem 0.7rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.78rem;
+        }
+
+        .lead {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            border-left: 3px solid var(--accent);
+            padding-left: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* ── Section Headings ── */
+        .section-heading {
+            display: flex; align-items: center; gap: 0.75rem;
+            margin: 3.5rem 0 1.5rem;
+        }
+
+        .section-heading .icon {
+            width: 40px; height: 40px;
+            background: var(--accent-glow);
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .section-heading .icon svg { width: 20px; height: 20px; fill: var(--primary-light); }
+
+        /* ── Comparison Cards ── */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 640px) { .comparison-grid { grid-template-columns: 1fr; } }
+
+        .compare-card {
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .compare-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+
+        .compare-card.old {
+            background: linear-gradient(135deg, #fef2f2, #fff);
+            border-color: #fecaca;
+        }
+        .compare-card.old h3 { color: var(--danger); }
+
+        .compare-card.new {
+            background: linear-gradient(135deg, #f0f9ff, #fff);
+            border-color: #bae6fd;
+        }
+        .compare-card.new h3 { color: var(--primary-light); }
+
+        /* ── SVG Figure Container ── */
+        .figure {
+            margin: 2.5rem 0;
+            text-align: center;
+        }
+
+        .figure svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .figure-caption {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 0.75rem;
+            font-style: italic;
+        }
+
+        /* ── Key Insight Callout ── */
+        .callout {
+            background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+            border: 1px solid #bfdbfe;
+            border-radius: var(--radius);
+            padding: 1.5rem 1.75rem;
+            margin: 2rem 0;
+        }
+
+        .callout-title {
+            font-weight: 700;
+            color: var(--primary-light);
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .callout p:last-child { margin-bottom: 0; }
+
+        /* ── Results Table ── */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        thead { background: var(--primary); color: white; }
+        th { padding: 0.9rem 1rem; text-align: left; font-weight: 600; white-space: nowrap; }
+        td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+        tbody tr:hover td { background: #f8fafc; }
+
+        .highlight-row td {
+            background: #eff6ff !important;
+            font-weight: 700;
+            color: var(--primary-light);
+            border-bottom: 2px solid var(--primary-light);
+        }
+
+        .table-label {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        /* ── Stats Row ── */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .stat-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+
+        .stat-value {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary-light);
+            letter-spacing: -0.03em;
+        }
+
+        .stat-label {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+            font-weight: 500;
+        }
+
+        .stat-delta {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--success);
+            background: #ecfdf5;
+            padding: 0.15rem 0.5rem;
+            border-radius: 50px;
+            margin-top: 0.4rem;
+        }
+
+        /* ── Bar Chart (CSS) ── */
+        .bar-chart { margin: 2rem 0; }
+        .bar-row {
+            display: flex; align-items: center; gap: 1rem;
+            margin-bottom: 0.9rem;
+        }
+        .bar-label {
+            width: 130px; text-align: right;
+            font-size: 0.85rem; font-weight: 600; color: var(--text);
+            flex-shrink: 0;
+        }
+        .bar-track {
+            flex: 1; height: 32px;
+            background: #f1f5f9;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+        .bar-fill {
+            height: 100%;
+            border-radius: 8px;
+            display: flex; align-items: center;
+            padding-left: 12px;
+            font-size: 0.8rem; font-weight: 700; color: white;
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ── Pipeline Section ── */
+        .pipeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
+
+        .pipeline-step {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .pipeline-step:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+
+        .pipeline-num {
+            width: 36px; height: 36px;
+            background: var(--primary-light);
+            color: white;
+            border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .pipeline-step h4 { margin-bottom: 0.4rem; color: var(--primary); }
+        .pipeline-step p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+
+        /* ── Defense Section ── */
+        .defense-highlight {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            color: white;
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .defense-highlight h3 { color: #93c5fd; margin-bottom: 1rem; }
+        .defense-highlight p { opacity: 0.9; }
+
+        .defense-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .defense-stat {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .defense-stat .val {
+            font-size: 1.6rem; font-weight: 800;
+            color: #67e8f9;
+        }
+
+        .defense-stat .lbl {
+            font-size: 0.78rem; opacity: 0.7; margin-top: 0.2rem;
+        }
+
+        /* ── FLiP Section ── */
+        .flip-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 640px) { .flip-grid { grid-template-columns: 1fr; } }
+
+        .flip-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .flip-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+
+        .flip-card h4 { color: var(--primary); margin-bottom: 0.5rem; }
+        .flip-card p { font-size: 0.9rem; color: var(--text-secondary); margin: 0; }
+
+        .flip-metric {
+            font-size: 1.6rem; font-weight: 800;
+            color: var(--success);
+            margin-bottom: 0.25rem;
+        }
+
+        /* ── Timeline ── */
+        .timeline {
+            position: relative;
+            margin: 2.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute; left: 7px; top: 0; bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent), var(--primary-light));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.75rem;
+            padding-left: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem; top: 0.35rem;
+            width: 14px; height: 14px;
+            background: var(--accent);
+            border: 3px solid var(--bg);
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .timeline-date {
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .timeline-item h4 { margin: 0.2rem 0 0.3rem; color: var(--primary); }
+        .timeline-item p { font-size: 0.88rem; color: var(--text-secondary); margin: 0; }
+
+        /* ── CTA Footer ── */
+        .cta-section {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #1e40af 100%);
+            color: white;
+            border-radius: var(--radius);
+            padding: 3.5rem 2.5rem;
+            margin: 4rem 0 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: radial-gradient(ellipse 400px 300px at 50% 50%, rgba(14,165,233,0.12), transparent);
+        }
+
+        .cta-section > * { position: relative; }
+        .cta-section h2 { margin-bottom: 1rem; }
+        .cta-section p { opacity: 0.85; max-width: 600px; margin: 0 auto 2rem; }
+        .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            margin-top: 3rem;
+        }
+
+        footer a { color: var(--primary-light); }
+
+        /* ── Scroll Animations ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ── Print ── */
+        @media print {
+            .nav, .hero::before, .particle { display: none; }
+            .hero { padding: 2rem; }
+            .article { box-shadow: none; border: 1px solid #ccc; }
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero { padding: 6rem 1.5rem 4rem; }
+            .article { padding: 1.5rem; }
+            .comparison-grid, .flip-grid { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: 1fr 1fr; }
+            .bar-label { width: 90px; font-size: 0.78rem; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav">
+    <div class="nav-inner">
+        <div class="nav-logo">PICASO<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#defense">Defense</a></li>
+            <li><a href="#flip">FLiP</a></li>
+            <li><a href="https://github.com/ubaidazam/PICASO" target="_blank">GitHub</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+    <!-- Particles -->
+    <div class="particle" style="width:6px;height:6px;left:10%;bottom:-10%;animation-duration:18s;animation-delay:0s;"></div>
+    <div class="particle" style="width:4px;height:4px;left:25%;bottom:-10%;animation-duration:22s;animation-delay:3s;"></div>
+    <div class="particle" style="width:8px;height:8px;left:50%;bottom:-10%;animation-duration:16s;animation-delay:1s;"></div>
+    <div class="particle" style="width:5px;height:5px;left:70%;bottom:-10%;animation-duration:20s;animation-delay:5s;"></div>
+    <div class="particle" style="width:3px;height:3px;left:85%;bottom:-10%;animation-duration:24s;animation-delay:2s;"></div>
+    <div class="particle" style="width:7px;height:7px;left:40%;bottom:-10%;animation-duration:19s;animation-delay:4s;"></div>
+
+    <div class="hero-content">
+        <div class="hero-badge">Alan Turing Institute &middot; Defence &amp; Security Programme</div>
+        <h1>Beyond the Point: Knowledge as Probability</h1>
+        <p class="subtitle">PICASO replaces rigid knowledge graphs with probabilistic clouds &mdash; achieving state-of-the-art accuracy while telling you exactly how confident each answer is.</p>
+        <div class="hero-actions">
+            <a href="https://github.com/ubaidazam/PICASO" class="btn btn-primary" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View on GitHub
+            </a>
+            <a href="#approach" class="btn btn-outline">Read the Science</a>
+        </div>
+    </div>
+</section>
+
+<!-- ── Article ── -->
+<div class="content">
+<article class="article">
+
+    <div class="article-meta">
+        <span class="tag">Research Blog</span>
+        <span>Shoaib Jameel &middot; Ubaid Azam &middot; PICASO Project</span>
+    </div>
+
+    <!-- ── The Problem ── -->
+    <section id="problem">
+    <p class="lead">
+        Intelligence analysts face a paradox: the data they need to make sense of is vast, ambiguous, and often contradictory &mdash; yet the computational tools they rely on demand certainty. PICASO resolves this by making uncertainty a first-class citizen in knowledge representation.
+    </p>
+
+    <p>
+        Real-world intelligence analysis is fundamentally challenged by data characterised by immense volume, variety, velocity, and veracity. Analysts routinely confront ambiguous, vague, and conflicting information from disparate sources. Unlike existing methods that merely track factual changes, an analyst's cognitive process involves building complex mental models that intrinsically weigh information by its uncertainty and dynamically refine beliefs as new evidence arrives.
+    </p>
+
+    <p>
+        Yet the computational systems we have built &mdash; traditional deterministic knowledge graphs &mdash; force this complex world into brittle, rigid points. A standard knowledge graph embedding represents every entity as a single coordinate in space: one fixed pin on a map. When one source reports an entity is "in a foreign country" and another says it is "in a city near the border", the system has no principled way to synthesise these vague, non-overlapping statements.
+    </p>
+
+    <div class="comparison-grid reveal">
+        <div class="compare-card old">
+            <h3>Traditional Approach: Fixed Points</h3>
+            <p>Entities are single coordinates. No notion of confidence. Conflicting evidence is either ignored or averaged into a meaningless midpoint. The model cannot say "I don't know."</p>
+        </div>
+        <div class="compare-card new">
+            <h3>PICASO: Probability Clouds</h3>
+            <p>Every entity is a Gaussian distribution with a <strong>location</strong> (what we think it is) and a <strong>spread</strong> (how sure we are). Conflicting evidence naturally produces wider, more honest clouds.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- ── The Approach ── -->
+    <section id="approach">
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h2>The PICASO Framework</h2>
+    </div>
+
+    <p>
+        <strong>PICASO (Probabilistic Conceptual Spaces Sensemaking under Uncertainty)</strong> operationalises Peter G&auml;rdenfor's Conceptual Space theory as an end-to-end differentiable probabilistic embedding model. At its core, the PROCS engine replaces every point embedding with a diagonal multivariate Gaussian, where the mean encodes the most likely concept position and the variance explicitly encodes uncertainty from vagueness, noise, and conflicting data.
+    </p>
+
+    <!-- SVG: Conceptual illustration of point vs distribution -->
+    <div class="figure reveal">
+        <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" style="max-width:700px;">
+            <!-- Left side: Point embedding -->
+            <rect x="0" y="0" width="320" height="220" rx="12" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+            <text x="160" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">Traditional: Point Embedding</text>
+            <!-- Axes -->
+            <line x1="50" y1="190" x2="290" y2="190" stroke="#94a3b8" stroke-width="1.5"/>
+            <line x1="50" y1="190" x2="50" y2="50" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="170" y="210" text-anchor="middle" font-size="11" fill="#94a3b8">Dimension 1</text>
+            <text x="30" y="120" text-anchor="middle" font-size="11" fill="#94a3b8" transform="rotate(-90,30,120)">Dimension 2</text>
+            <!-- Points -->
+            <circle cx="120" cy="100" r="5" fill="#ef4444"/>
+            <text x="130" y="95" font-size="10" fill="#64748b">Tank</text>
+            <circle cx="200" cy="140" r="5" fill="#ef4444"/>
+            <text x="210" y="135" font-size="10" fill="#64748b">APC</text>
+            <circle cx="160" cy="80" r="5" fill="#ef4444"/>
+            <text x="170" y="75" font-size="10" fill="#64748b">Truck</text>
+            <circle cx="240" cy="160" r="5" fill="#ef4444"/>
+            <text x="248" y="155" font-size="10" fill="#64748b">Jeep</text>
+            <!-- Question mark for ambiguous entity -->
+            <circle cx="170" cy="130" r="5" fill="#f59e0b"/>
+            <text x="180" y="128" font-size="10" fill="#f59e0b" font-weight="700">"Vehicle"??</text>
+
+            <!-- Right side: PICASO -->
+            <rect x="380" y="0" width="320" height="220" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+            <text x="540" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#2563eb">PICASO: Gaussian Distributions</text>
+            <!-- Axes -->
+            <line x1="430" y1="190" x2="670" y2="190" stroke="#94a3b8" stroke-width="1.5"/>
+            <line x1="430" y1="190" x2="430" y2="50" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="550" y="210" text-anchor="middle" font-size="11" fill="#94a3b8">Dimension 1</text>
+            <text x="410" y="120" text-anchor="middle" font-size="11" fill="#94a3b8" transform="rotate(-90,410,120)">Dimension 2</text>
+            <!-- Tight cloud: Tank (high certainty) -->
+            <ellipse cx="500" cy="100" rx="18" ry="14" fill="rgba(37,99,235,0.15)" stroke="#2563eb" stroke-width="1.5"/>
+            <circle cx="500" cy="100" r="3" fill="#2563eb"/>
+            <text x="522" y="95" font-size="10" fill="#1e40af" font-weight="600">Tank</text>
+            <!-- Medium cloud: APC -->
+            <ellipse cx="580" cy="140" rx="22" ry="18" fill="rgba(37,99,235,0.1)" stroke="#2563eb" stroke-width="1.2"/>
+            <circle cx="580" cy="140" r="3" fill="#2563eb"/>
+            <text x="606" y="135" font-size="10" fill="#1e40af" font-weight="600">APC</text>
+            <!-- Large cloud: "Vehicle" (low certainty) -->
+            <ellipse cx="540" cy="120" rx="55" ry="45" fill="rgba(14,165,233,0.08)" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="5,3"/>
+            <text x="540" y="170" text-anchor="middle" font-size="10" fill="#0ea5e9" font-weight="700">"Vehicle" (uncertain)</text>
+        </svg>
+        <div class="figure-caption">Left: Traditional embeddings place every entity at a single fixed point &mdash; ambiguity has nowhere to go. Right: PICASO models entities as Gaussian clouds; vague reports like "Vehicle" naturally produce wider distributions.</div>
+    </div>
+
+    <div class="pipeline reveal">
+        <div class="pipeline-step">
+            <div class="pipeline-num">1</div>
+            <h4>Entities as Gaussians</h4>
+            <p>Each entity is a distribution N(&mu;, &sigma;&sup2;) where the mean is the best-guess position and the variance encodes uncertainty.</p>
+        </div>
+        <div class="pipeline-step">
+            <div class="pipeline-num">2</div>
+            <h4>Probabilistic Relations</h4>
+            <p>Relations transform distributions via rotation, scaling, and translation &mdash; propagating uncertainty through each inference step.</p>
+        </div>
+        <div class="pipeline-step">
+            <div class="pipeline-num">3</div>
+            <h4>Geometric Scoring</h4>
+            <p>Five complementary scoring functions (geometric, translational, KL, bilinear, complex) jointly constrain the space.</p>
+        </div>
+        <div class="pipeline-step">
+            <div class="pipeline-num">4</div>
+            <h4>Calibrated Uncertainty</h4>
+            <p>A dedicated calibration loss ensures that stated confidence aligns with actual accuracy &mdash; no post-hoc patches needed.</p>
+        </div>
+    </div>
+
+    <div class="callout reveal">
+        <div class="callout-title">Speed Through Geometry</div>
+        <p>
+            Bayesian methods are powerful but usually too slow because they rely on sampling &mdash; running millions of simulations. PICASO skips the simulations entirely. Because we shape our clouds as Gaussians, we use direct geometric formulas to calculate interactions instantly. The PROCS engine achieves <strong>O(1) time complexity</strong> with respect to graph size, delivering deep-reasoning accuracy with the speed of standard embeddings.
+        </p>
+    </div>
+    </section>
+
+    <!-- ── Results ── -->
+    <section id="results">
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+        </div>
+        <h2>Benchmark Results: Surpassing the State of the Art</h2>
+    </div>
+
+    <p>
+        We evaluated PROCS on the standard FB15k-237 and WN18RR benchmarks against established embedding techniques and heavy graph neural networks.
+    </p>
+
+    <div class="stats-row reveal">
+        <div class="stat-card">
+            <div class="stat-value">0.417</div>
+            <div class="stat-label">MRR on FB15k-237</div>
+            <div class="stat-delta">+15.2% vs best baseline</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">0.339</div>
+            <div class="stat-label">Hits@1 on FB15k-237</div>
+            <div class="stat-delta">+25.1% vs best baseline</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">89.0%</div>
+            <div class="stat-label">Triple Classification Accuracy</div>
+            <div class="stat-delta">+12.6 pts vs R2D2+</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">0.949</div>
+            <div class="stat-label">ROC-AUC (FB15k-237)</div>
+            <div class="stat-delta">+9.2 pts vs R2D2+</div>
+        </div>
+    </div>
+
+    <!-- Link Prediction Table -->
+    <div class="table-wrapper reveal">
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Methodology</th>
+                    <th>MRR</th>
+                    <th>Hits@1</th>
+                    <th>Hits@3</th>
+                    <th>Hits@10</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TransE</td>
+                    <td>Translational Point Embedding</td>
+                    <td>0.294</td>
+                    <td>&mdash;</td>
+                    <td>&mdash;</td>
+                    <td>0.465</td>
+                </tr>
+                <tr>
+                    <td>RotatE</td>
+                    <td>Rotation in Complex Space</td>
+                    <td>0.338</td>
+                    <td>0.241</td>
+                    <td>0.375</td>
+                    <td>0.533</td>
+                </tr>
+                <tr>
+                    <td>TuckER</td>
+                    <td>Tensor Factorisation</td>
+                    <td>0.358</td>
+                    <td>0.266</td>
+                    <td>0.394</td>
+                    <td>0.544</td>
+                </tr>
+                <tr>
+                    <td>GIE</td>
+                    <td>Geometric Interaction Embedding</td>
+                    <td>0.362</td>
+                    <td>0.271</td>
+                    <td>0.401</td>
+                    <td>0.552</td>
+                </tr>
+                <tr>
+                    <td>NBFNet</td>
+                    <td>Deep Graph Neural Network</td>
+                    <td>0.415</td>
+                    <td>0.321</td>
+                    <td>0.454</td>
+                    <td><strong>0.599</strong></td>
+                </tr>
+                <tr class="highlight-row">
+                    <td>PROCS (Ours)</td>
+                    <td>Bayesian Conceptual Space</td>
+                    <td><strong>0.417</strong></td>
+                    <td><strong>0.339</strong></td>
+                    <td><strong>0.457</strong></td>
+                    <td>0.559</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="table-label">Link prediction results on FB15k-237. PROCS matches the heavy NBFNet while retaining O(1) inference.</p>
+
+    <p class="reveal">
+        PROCS surpasses the computationally heavy NBFNet on FB15k-237 in both Mean Reciprocal Rank (0.417 vs 0.415) and strict top-1 retrieval (0.339 vs 0.321), achieving this <strong>without the overhead of explicit path extraction</strong>. Unlike every baseline above, PROCS additionally provides calibrated uncertainty estimates, enabling selective prediction and risk-aware decision support.
+    </p>
+
+    <!-- Uncertainty Calibration Visualization -->
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+        </div>
+        <h2>Honest Confidence: Calibrated Uncertainty</h2>
+    </div>
+
+    <p>
+        The defining advantage of PICASO is that when it says "I'm confident", it is more likely to be correct &mdash; and when it says "I'm uncertain", you should seek human review. This is validated by uncertainty-stratified accuracy:
+    </p>
+
+    <!-- SVG Bar Chart: Uncertainty bins -->
+    <div class="figure reveal">
+        <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" style="max-width:720px;">
+            <text x="370" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Uncertainty-Stratified Accuracy (FB15k-237 &mdash; Hits@1)</text>
+            <!-- Chart area: y=60 (top, 60%) to y=280 (bottom, 0%). Each 10% = 36.67px -->
+            <!-- Axes -->
+            <line x1="90" y1="280" x2="680" y2="280" stroke="#cbd5e1" stroke-width="1"/>
+            <line x1="90" y1="60" x2="90" y2="280" stroke="#cbd5e1" stroke-width="1"/>
+            <!-- Y-axis labels & grid -->
+            <text x="82" y="284" text-anchor="end" font-size="10" fill="#94a3b8">0%</text>
+            <line x1="90" y1="243.3" x2="680" y2="243.3" stroke="#f1f5f9" stroke-width="1"/>
+            <text x="82" y="247" text-anchor="end" font-size="10" fill="#94a3b8">10%</text>
+            <line x1="90" y1="206.7" x2="680" y2="206.7" stroke="#f1f5f9" stroke-width="1"/>
+            <text x="82" y="210" text-anchor="end" font-size="10" fill="#94a3b8">20%</text>
+            <line x1="90" y1="170" x2="680" y2="170" stroke="#f1f5f9" stroke-width="1"/>
+            <text x="82" y="174" text-anchor="end" font-size="10" fill="#94a3b8">30%</text>
+            <line x1="90" y1="133.3" x2="680" y2="133.3" stroke="#f1f5f9" stroke-width="1"/>
+            <text x="82" y="137" text-anchor="end" font-size="10" fill="#94a3b8">40%</text>
+            <line x1="90" y1="96.7" x2="680" y2="96.7" stroke="#f1f5f9" stroke-width="1"/>
+            <text x="82" y="100" text-anchor="end" font-size="10" fill="#94a3b8">50%</text>
+            <line x1="90" y1="60" x2="680" y2="60" stroke="#f1f5f9" stroke-width="1"/>
+            <text x="82" y="64" text-anchor="end" font-size="10" fill="#94a3b8">60%</text>
+            <!-- Average line at 33.9% => y = 280 - 33.9*3.667 = 280 - 124.3 = 155.7 -->
+            <line x1="90" y1="155.7" x2="680" y2="155.7" stroke="#94a3b8" stroke-width="1" stroke-dasharray="6,4"/>
+            <text x="684" y="159" font-size="10" fill="#94a3b8">avg 33.9%</text>
+            <!-- Bars: each bar 48px wide, gap ~8px, starting at x=105 -->
+            <!-- 59.1% => h=216.8, y=280-216.8=63.2 -->
+            <rect x="105" y="63.2" width="48" height="216.8" rx="4" fill="#10b981" opacity="0.85"/>
+            <text x="129" y="57" text-anchor="middle" font-size="10" font-weight="700" fill="#10b981">59.1%</text>
+            <text x="129" y="296" text-anchor="middle" font-size="10" fill="#64748b">1</text>
+
+            <!-- 52.9% => h=194.0, y=86.0 -->
+            <rect x="161" y="86.0" width="48" height="194.0" rx="4" fill="#10b981" opacity="0.75"/>
+            <text x="185" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#10b981">52.9%</text>
+            <text x="185" y="296" text-anchor="middle" font-size="10" fill="#64748b">2</text>
+
+            <!-- 43.6% => h=159.8, y=120.2 -->
+            <rect x="217" y="120.2" width="48" height="159.8" rx="4" fill="#22c55e" opacity="0.7"/>
+            <text x="241" y="114" text-anchor="middle" font-size="10" font-weight="700" fill="#22c55e">43.6%</text>
+            <text x="241" y="296" text-anchor="middle" font-size="10" fill="#64748b">3</text>
+
+            <!-- 46.3% => h=169.7, y=110.3 -->
+            <rect x="273" y="110.3" width="48" height="169.7" rx="4" fill="#22c55e" opacity="0.7"/>
+            <text x="297" y="104" text-anchor="middle" font-size="10" font-weight="700" fill="#22c55e">46.3%</text>
+            <text x="297" y="296" text-anchor="middle" font-size="10" fill="#64748b">4</text>
+
+            <!-- 49.7% => h=182.2, y=97.8 -->
+            <rect x="329" y="97.8" width="48" height="182.2" rx="4" fill="#22c55e" opacity="0.65"/>
+            <text x="353" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#22c55e">49.7%</text>
+            <text x="353" y="296" text-anchor="middle" font-size="10" fill="#64748b">5</text>
+
+            <!-- 51.4% => h=188.4, y=91.6 -->
+            <rect x="385" y="91.6" width="48" height="188.4" rx="4" fill="#22c55e" opacity="0.6"/>
+            <text x="409" y="86" text-anchor="middle" font-size="10" font-weight="700" fill="#22c55e">51.4%</text>
+            <text x="409" y="296" text-anchor="middle" font-size="10" fill="#64748b">6</text>
+
+            <!-- 33.9% => h=124.3, y=155.7 -->
+            <rect x="441" y="155.7" width="48" height="124.3" rx="4" fill="#f59e0b" opacity="0.75"/>
+            <text x="465" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#f59e0b">33.9%</text>
+            <text x="465" y="296" text-anchor="middle" font-size="10" fill="#64748b">7</text>
+
+            <!-- 30.4% => h=111.5, y=168.5 -->
+            <rect x="497" y="168.5" width="48" height="111.5" rx="4" fill="#f97316" opacity="0.75"/>
+            <text x="521" y="163" text-anchor="middle" font-size="10" font-weight="700" fill="#f97316">30.4%</text>
+            <text x="521" y="296" text-anchor="middle" font-size="10" fill="#64748b">8</text>
+
+            <!-- 40.2% => h=147.4, y=132.6 -->
+            <rect x="553" y="132.6" width="48" height="147.4" rx="4" fill="#f59e0b" opacity="0.65"/>
+            <text x="577" y="127" text-anchor="middle" font-size="10" font-weight="700" fill="#f59e0b">40.2%</text>
+            <text x="577" y="296" text-anchor="middle" font-size="10" fill="#64748b">9</text>
+
+            <!-- 29.2% => h=107.1, y=172.9 -->
+            <rect x="609" y="172.9" width="48" height="107.1" rx="4" fill="#ef4444" opacity="0.8"/>
+            <text x="633" y="167" text-anchor="middle" font-size="10" font-weight="700" fill="#ef4444">29.2%</text>
+            <text x="633" y="296" text-anchor="middle" font-size="10" fill="#64748b">10</text>
+
+            <!-- X-axis label -->
+            <text x="390" y="314" text-anchor="middle" font-size="11" fill="#64748b">Uncertainty Bin (1 = most confident, 10 = least confident)</text>
+        </svg>
+        <div class="figure-caption">Lower-uncertainty bins consistently achieve higher accuracy. When PICASO says it is confident, it is correct far more often &mdash; enabling risk-aware filtering for high-stakes decisions.</div>
+    </div>
+    </section>
+
+    <!-- ── Defense Domain ── -->
+    <section id="defense">
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+        </div>
+        <h2>Real-World Impact: Defence Knowledge Graph</h2>
+    </div>
+
+    <p>
+        Standard benchmarks reward memorisation. In real defence and intelligence applications, the cost of a false positive &mdash; hallucinating a link between a military unit and a location &mdash; is unacceptable. To demonstrate PICASO's practical value, we automatically constructed a novel Defence-Wikidata Knowledge Graph.
+    </p>
+
+    <div class="defense-highlight reveal">
+        <h3>Defence-Wikidata Knowledge Graph</h3>
+        <p>We scanned over 63 million Wikidata entities and extracted defence-relevant knowledge spanning military units, battles, weapons systems, treaties, operations, intelligence agencies, and personnel.</p>
+        <div class="defense-stats">
+            <div class="defense-stat">
+                <div class="val">68,826</div>
+                <div class="lbl">Defence Entities</div>
+            </div>
+            <div class="defense-stat">
+                <div class="val">143,532</div>
+                <div class="lbl">Relations</div>
+            </div>
+            <div class="defense-stat">
+                <div class="val">355</div>
+                <div class="lbl">Relation Types</div>
+            </div>
+            <div class="defense-stat">
+                <div class="val">63M+</div>
+                <div class="lbl">Wikidata Entities Scanned</div>
+            </div>
+        </div>
+    </div>
+
+    <p class="reveal">
+        On this challenging, sparse domain (average 3.3 relations per entity), the uncertainty estimates enable <strong>selective prediction</strong>: by stratifying predictions into confidence tiers, decision-makers can act on confident predictions and defer uncertain ones for human review.
+    </p>
+
+    <!-- Defence selective prediction bars -->
+    <div class="bar-chart reveal">
+        <div class="bar-row">
+            <div class="bar-label">High Confidence</div>
+            <div class="bar-track">
+                <div class="bar-fill" style="width:75%;background:linear-gradient(90deg,#10b981,#059669);">45.1% Hits@1</div>
+            </div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Medium Confidence</div>
+            <div class="bar-track">
+                <div class="bar-fill" style="width:87%;background:linear-gradient(90deg,#f59e0b,#d97706);">52.4% Hits@1</div>
+            </div>
+        </div>
+        <div class="bar-row">
+            <div class="bar-label">Low Confidence</div>
+            <div class="bar-track">
+                <div class="bar-fill" style="width:44%;background:linear-gradient(90deg,#ef4444,#dc2626);">26.3% Hits@1</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="callout reveal">
+        <div class="callout-title">Why This Matters for Decision-Makers</div>
+        <p>
+            High-confidence predictions achieve <strong>45.1% Hits@1</strong> while low-confidence predictions drop to <strong>26.3%</strong>. This 18.8 percentage-point gap means a decision-maker can selectively trust the model's confident outputs and route uncertain predictions to human analysts &mdash; a capability no deterministic baseline can offer natively. In high-stakes environments, knowing <em>when not to trust the model</em> is as valuable as the predictions themselves.
+        </p>
+    </div>
+    </section>
+
+    <!-- ── FLiP ── -->
+    <section id="flip">
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        </div>
+        <h2>Federated Security with FLiP</h2>
+    </div>
+
+    <p>
+        Defence and intelligence data is inherently sensitive and decentralised &mdash; different agencies hold different pieces of the puzzle, and sharing raw data is often prohibited. To address this, we developed <strong>FLiP (Federated Lightweight Prompt-tuning)</strong>, presented at LREC-COLING 2025. FLiP enables collaborative model training across organisational boundaries without ever sharing raw data.
+    </p>
+
+    <div class="flip-grid reveal">
+        <div class="flip-card">
+            <div class="flip-metric">16%</div>
+            <h4>Trainable Parameters</h4>
+            <p>By sharing lightweight prompts instead of full model weights, FLiP reduces the parameter footprint to just 16% of traditional approaches.</p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-metric">90%</div>
+            <h4>GPU Memory Reduction</h4>
+            <p>Cuts GPU memory consumption by 90%, enabling deployment on resource-constrained edge devices common in defence settings.</p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-metric">Zero</div>
+            <h4>Raw Data Shared</h4>
+            <p>Only compact prompt vectors cross organisational boundaries &mdash; the underlying sensitive data never leaves its source.</p>
+        </div>
+        <div class="flip-card">
+            <div class="flip-metric">Full</div>
+            <h4>Privacy Compliance</h4>
+            <p>Compatible with differential privacy guarantees and existing information governance frameworks.</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <div class="cta-section reveal">
+        <h2>Stop Working with Static Points.<br>Start Working with Intelligent Probabilities.</h2>
+        <p>PICASO is open-source and pip-installable. Explore the code, run the examples, and see probabilistic knowledge representation in action.</p>
+        <div class="cta-actions">
+            <a href="https://github.com/ubaidazam/PICASO" class="btn btn-primary" target="_blank">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                View on GitHub
+            </a>
+            <a href="#" class="btn btn-outline" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
+        </div>
+    </div>
+
+</article>
+</div>
+
+<!-- ── Footer ── -->
+<footer>
+    <p><strong>PICASO</strong> &mdash; Probabilistic Conceptual Spaces Sensemaking under Uncertainty</p>
+    <p>Funded by the <a href="https://www.turing.ac.uk" target="_blank">Alan Turing Institute</a>, Defence &amp; Security Programme</p>
+    <p style="margin-top:0.5rem;">&copy; 2025 Ubaid Azam. Released under open-source licence.</p>
+</footer>
+
+<!-- ── Scroll Reveal Script ── -->
+<script>
+(function() {
+    const els = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.12 });
+    els.forEach(function(el) { observer.observe(el); });
+})();
+</script>
+
+</body>
+</html>
