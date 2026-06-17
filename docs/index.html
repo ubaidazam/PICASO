@@ -488,6 +488,41 @@
             margin-bottom: 0.25rem;
         }
 
+        /* ── Publications ── */
+        .pub-list { margin: 2rem 0; display: flex; flex-direction: column; gap: 1.1rem; }
+        .pub-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            transition: var(--transition);
+        }
+        .pub-item:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+        .pub-venue {
+            display: inline-block;
+            font-size: 0.72rem; font-weight: 700;
+            color: var(--primary-light);
+            background: var(--accent-glow);
+            padding: 0.2rem 0.7rem;
+            border-radius: 50px;
+            text-transform: uppercase; letter-spacing: 0.04em;
+            margin-bottom: 0.6rem;
+        }
+        .pub-title { font-size: 1.02rem; font-weight: 700; color: var(--primary); margin-bottom: 0.35rem; line-height: 1.35; }
+        .pub-authors { font-size: 0.88rem; color: var(--text-secondary); margin: 0; }
+        .pub-authors .me { color: var(--text); font-weight: 700; }
+
+        /* ── Demo Videos ── */
+        .video-block { margin: 2rem 0; }
+        .video-block video {
+            width: 100%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            background: #000;
+            display: block;
+        }
+
         /* ── Timeline ── */
         .timeline {
             position: relative;
@@ -605,7 +640,9 @@
             <li><a href="#approach">Approach</a></li>
             <li><a href="#results">Results</a></li>
             <li><a href="#defense">Defense</a></li>
+            <li><a href="#demo">Demo</a></li>
             <li><a href="#flip">FLiP</a></li>
+            <li><a href="#publications">Publications</a></li>
             <li><a href="https://github.com/ubaidazam/PICASO" target="_blank">GitHub</a></li>
         </ul>
     </div>
@@ -624,7 +661,7 @@
     <div class="hero-content">
         <div class="hero-badge">Alan Turing Institute &middot; Defence &amp; Security Programme</div>
         <h1>Beyond the Point: Knowledge as Probability</h1>
-        <p class="subtitle">PICASO replaces rigid knowledge graphs with probabilistic clouds &mdash; achieving state-of-the-art accuracy while telling you exactly how confident each answer is.</p>
+        <p class="subtitle">PICASO replaces rigid knowledge graphs with probabilistic clouds, achieving state-of-the-art accuracy while telling you exactly how confident each answer is.</p>
         <div class="hero-actions">
             <a href="https://github.com/ubaidazam/PICASO" class="btn btn-primary" target="_blank">
                 <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -647,7 +684,7 @@
     <!-- ── The Problem ── -->
     <section id="problem">
     <p class="lead">
-        Intelligence analysts face a paradox: the data they need to make sense of is vast, ambiguous, and often contradictory &mdash; yet the computational tools they rely on demand certainty. PICASO resolves this by making uncertainty a first-class citizen in knowledge representation.
+        Intelligence analysts face a paradox: the data they need to make sense of is vast, ambiguous, and often contradictory, yet the computational tools they rely on demand certainty. PICASO resolves this by making uncertainty a first-class citizen in knowledge representation.
     </p>
 
     <p>
@@ -655,7 +692,7 @@
     </p>
 
     <p>
-        Yet the computational systems we have built &mdash; traditional deterministic knowledge graphs &mdash; force this complex world into brittle, rigid points. A standard knowledge graph embedding represents every entity as a single coordinate in space: one fixed pin on a map. When one source reports an entity is "in a foreign country" and another says it is "in a city near the border", the system has no principled way to synthesise these vague, non-overlapping statements.
+        Yet the computational systems we have built (traditional deterministic knowledge graphs) force this complex world into brittle, rigid points. A standard knowledge graph embedding represents every entity as a single coordinate in space: one fixed pin on a map. When one source reports an entity is "in a foreign country" and another says it is "in a city near the border", the system has no principled way to synthesise these vague, non-overlapping statements.
     </p>
 
     <div class="comparison-grid reveal">
@@ -727,7 +764,7 @@
             <ellipse cx="540" cy="120" rx="55" ry="45" fill="rgba(14,165,233,0.08)" stroke="#0ea5e9" stroke-width="1.5" stroke-dasharray="5,3"/>
             <text x="540" y="170" text-anchor="middle" font-size="10" fill="#0ea5e9" font-weight="700">"Vehicle" (uncertain)</text>
         </svg>
-        <div class="figure-caption">Left: Traditional embeddings place every entity at a single fixed point &mdash; ambiguity has nowhere to go. Right: PICASO models entities as Gaussian clouds; vague reports like "Vehicle" naturally produce wider distributions.</div>
+        <div class="figure-caption">Left: Traditional embeddings place every entity at a single fixed point, so ambiguity has nowhere to go. Right: PICASO models entities as Gaussian clouds; vague reports like "Vehicle" naturally produce wider distributions.</div>
     </div>
 
     <div class="pipeline reveal">
@@ -739,7 +776,7 @@
         <div class="pipeline-step">
             <div class="pipeline-num">2</div>
             <h4>Probabilistic Relations</h4>
-            <p>Relations transform distributions via rotation, scaling, and translation &mdash; propagating uncertainty through each inference step.</p>
+            <p>Relations transform distributions via rotation, scaling, and translation, propagating uncertainty through each inference step.</p>
         </div>
         <div class="pipeline-step">
             <div class="pipeline-num">3</div>
@@ -749,14 +786,14 @@
         <div class="pipeline-step">
             <div class="pipeline-num">4</div>
             <h4>Calibrated Uncertainty</h4>
-            <p>A dedicated calibration loss ensures that stated confidence aligns with actual accuracy &mdash; no post-hoc patches needed.</p>
+            <p>A dedicated calibration loss ensures that stated confidence aligns with actual accuracy, with no post-hoc patches needed.</p>
         </div>
     </div>
 
     <div class="callout reveal">
         <div class="callout-title">Speed Through Geometry</div>
         <p>
-            Bayesian methods are powerful but usually too slow because they rely on sampling &mdash; running millions of simulations. PICASO skips the simulations entirely. Because we shape our clouds as Gaussians, we use direct geometric formulas to calculate interactions instantly. The PROCS engine achieves <strong>O(1) time complexity</strong> with respect to graph size, delivering deep-reasoning accuracy with the speed of standard embeddings.
+            Bayesian methods are powerful but usually too slow because they rely on sampling, running millions of simulations. PICASO skips the simulations entirely. Because we shape our clouds as Gaussians, we use direct geometric formulas to calculate interactions instantly. The PROCS engine achieves <strong>O(1) time complexity</strong> with respect to graph size, delivering deep-reasoning accuracy with the speed of standard embeddings.
         </p>
     </div>
     </section>
@@ -877,13 +914,13 @@
     </div>
 
     <p>
-        The defining advantage of PICASO is that when it says "I'm confident", it is more likely to be correct &mdash; and when it says "I'm uncertain", you should seek human review. This is validated by uncertainty-stratified accuracy:
+        The defining advantage of PICASO is that when it says "I'm confident", it is more likely to be correct, and when it says "I'm uncertain", you should seek human review. This is validated by uncertainty-stratified accuracy:
     </p>
 
     <!-- SVG Bar Chart: Uncertainty bins -->
     <div class="figure reveal">
         <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" style="max-width:720px;">
-            <text x="370" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Uncertainty-Stratified Accuracy (FB15k-237 &mdash; Hits@1)</text>
+            <text x="370" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#1e293b">Uncertainty-Stratified Accuracy (FB15k-237, Hits@1)</text>
             <!-- Chart area: y=60 (top, 60%) to y=280 (bottom, 0%). Each 10% = 36.67px -->
             <!-- Axes -->
             <line x1="90" y1="280" x2="680" y2="280" stroke="#cbd5e1" stroke-width="1"/>
@@ -959,7 +996,7 @@
             <!-- X-axis label -->
             <text x="390" y="314" text-anchor="middle" font-size="11" fill="#64748b">Uncertainty Bin (1 = most confident, 10 = least confident)</text>
         </svg>
-        <div class="figure-caption">Lower-uncertainty bins consistently achieve higher accuracy. When PICASO says it is confident, it is correct far more often &mdash; enabling risk-aware filtering for high-stakes decisions.</div>
+        <div class="figure-caption">Lower-uncertainty bins consistently achieve higher accuracy. When PICASO says it is confident, it is correct far more often, enabling risk-aware filtering for high-stakes decisions.</div>
     </div>
     </section>
 
@@ -973,7 +1010,7 @@
     </div>
 
     <p>
-        Standard benchmarks reward memorisation. In real defence and intelligence applications, the cost of a false positive &mdash; hallucinating a link between a military unit and a location &mdash; is unacceptable. To demonstrate PICASO's practical value, we automatically constructed a novel Defence-Wikidata Knowledge Graph.
+        Standard benchmarks reward memorisation. In real defence and intelligence applications, the cost of a false positive, such as hallucinating a link between a military unit and a location, is unacceptable. To demonstrate PICASO's practical value, we automatically constructed a novel Defence-Wikidata Knowledge Graph.
     </p>
 
     <div class="defense-highlight reveal">
@@ -1028,8 +1065,42 @@
     <div class="callout reveal">
         <div class="callout-title">Why This Matters for Decision-Makers</div>
         <p>
-            High-confidence predictions achieve <strong>45.1% Hits@1</strong> while low-confidence predictions drop to <strong>26.3%</strong>. This 18.8 percentage-point gap means a decision-maker can selectively trust the model's confident outputs and route uncertain predictions to human analysts &mdash; a capability no deterministic baseline can offer natively. In high-stakes environments, knowing <em>when not to trust the model</em> is as valuable as the predictions themselves.
+            High-confidence predictions achieve <strong>45.1% Hits@1</strong> while low-confidence predictions drop to <strong>26.3%</strong>. This 18.8 percentage-point gap means a decision-maker can selectively trust the model's confident outputs and route uncertain predictions to human analysts, a capability no deterministic baseline can offer natively. In high-stakes environments, knowing <em>when not to trust the model</em> is as valuable as the predictions themselves.
         </p>
+    </div>
+    </section>
+
+    <!-- ── Demo ── -->
+    <section id="demo">
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <h2>See PICASO in Action</h2>
+    </div>
+
+    <p>
+        The analyst interface runs PICASO live on the Defence-Wikidata knowledge graph. An analyst enters a head entity and a relation, and the model returns ranked predictions, each with a score, an uncertainty value, and an overall confidence signal, so that genuinely new inferences and low-confidence answers stand out at a glance.
+    </p>
+
+    <div class="video-block reveal">
+        <video controls preload="metadata" playsinline poster="videos/gui-poster.jpg">
+            <source src="videos/gui-demo.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+        </video>
+        <div class="figure-caption">The PICASO analyst GUI: uncertainty-aware link prediction on the Defence-Wikidata knowledge graph.</div>
+    </div>
+
+    <p>
+        PICASO is also available as a pip-installable Python package, so you can train an uncertainty-aware embedding model on your own data in just a few lines of code.
+    </p>
+
+    <div class="video-block reveal">
+        <video controls preload="metadata" playsinline poster="videos/package-poster.jpg">
+            <source src="videos/package-demo.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+        </video>
+        <div class="figure-caption">The <code>pypicaso</code> package: from configuration to a trained probabilistic model in a handful of lines.</div>
     </div>
     </section>
 
@@ -1043,7 +1114,7 @@
     </div>
 
     <p>
-        Defence and intelligence data is inherently sensitive and decentralised &mdash; different agencies hold different pieces of the puzzle, and sharing raw data is often prohibited. To address this, we developed <strong>FLiP (Federated Lightweight Prompt-tuning)</strong>, presented at LREC 2026. FLiP enables collaborative model training across organisational boundaries without ever sharing raw data.
+        Defence and intelligence data is inherently sensitive and decentralised: different agencies hold different pieces of the puzzle, and sharing raw data is often prohibited. To address this, we developed <strong>FLiP (Federated Lightweight Prompt-tuning)</strong>, presented at LREC 2026. FLiP enables collaborative model training across organisational boundaries without ever sharing raw data.
     </p>
 
     <div class="flip-grid reveal">
@@ -1060,7 +1131,7 @@
         <div class="flip-card">
             <div class="flip-metric">Zero</div>
             <h4>Raw Data Shared</h4>
-            <p>Only compact prompt vectors cross organisational boundaries &mdash; the underlying sensitive data never leaves its source.</p>
+            <p>Only compact prompt vectors cross organisational boundaries, and the underlying sensitive data never leaves its source.</p>
         </div>
         <div class="flip-card">
             <div class="flip-metric">Full</div>
@@ -1068,6 +1139,47 @@
             <p>Compatible with differential privacy guarantees and existing information governance frameworks.</p>
         </div>
     </div>
+    </section>
+
+    <!-- ── Publications ── -->
+    <section id="publications">
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+        </div>
+        <h2>Related Publications</h2>
+    </div>
+
+    <p>
+        PICASO builds on a broader body of peer-reviewed research from our group on conceptual spaces, uncertainty quantification, federated learning, and retrieval-augmented reasoning. Selected recent publications:
+    </p>
+
+    <div class="pub-list reveal">
+        <div class="pub-item">
+            <span class="pub-venue">CIKM 2026 &middot; Under Review</span>
+            <div class="pub-title">PROCS: Uncertainty-Aware Knowledge Graph Embeddings via Conceptual Spaces</div>
+            <p class="pub-authors"><span class="me">Ubaid Azam</span>, <span class="me">Shoaib Jameel</span>. The core PICASO model: a Bayesian conceptual space with calibrated, intrinsic uncertainty quantification.</p>
+        </div>
+        <div class="pub-item">
+            <span class="pub-venue">LREC 2026 &middot; Full Paper</span>
+            <div class="pub-title">Lightweight Cross-Lingual Federated Prompt Tuning for Low-Resource Languages</div>
+            <p class="pub-authors"><span class="me">Ubaid Azam</span>, Imran Razzak, <span class="me">Shoaib Jameel</span>. The Fifteenth Biennial Language Resources and Evaluation Conference (LREC 2026). Introduces FLiP, reducing GPU memory by 90% with only 16% trainable parameters.</p>
+        </div>
+        <div class="pub-item">
+            <span class="pub-venue">ACL 2026 &middot; Full Paper</span>
+            <div class="pub-title">Long Context Modeling with Ranked Memory-Augmented Retrieval</div>
+            <p class="pub-authors">Ghadir Alselwi, Hao Xue, <span class="me">Shoaib Jameel</span>, Basem Suleiman, Flora D. Salim, Imran Razzak. The 64th Annual Meeting of the Association for Computational Linguistics (ACL).</p>
+        </div>
+        <div class="pub-item">
+            <span class="pub-venue">ACL 2026 &middot; Full Paper</span>
+            <div class="pub-title">TAGS: A Test-Time Generalist&ndash;Specialist Framework with Retrieval-Augmented Reasoning and Verification</div>
+            <p class="pub-authors">Jianghao Wu, Feilong Tang, Yulong Li, Ming Hu, Haochen Xue, <span class="me">Shoaib Jameel</span>, Zongyuan Ge, Yutong Xie, Imran Razzak. The 64th Annual Meeting of the Association for Computational Linguistics (ACL).</p>
+        </div>
+    </div>
+
+    <p>
+        We also presented PICASO at the <a href="https://turing-knowledge-graphs.github.io/turing-defence-and-national-security/" target="_blank">Knowledge Graphs and Ontologies for Defence and National Security</a> workshop, held at The Alan Turing Institute on 15 April 2026, which brought together the Turing's funded projects on knowledge graphs, conceptual reasoning under uncertainty, and trustworthy systems for defence applications.
+    </p>
     </section>
 
     <!-- ── CTA ── -->
@@ -1088,8 +1200,8 @@
 
 <!-- ── Footer ── -->
 <footer>
-    <p><strong>PICASO</strong> &mdash; Probabilistic Conceptual Spaces Sensemaking under Uncertainty</p>
-    <p>Funded by the <a href="https://www.turing.ac.uk" target="_blank">Alan Turing Institute</a>, Defence &amp; Security Programme</p>
+    <p><strong>PICASO</strong>: Probabilistic Conceptual Spaces Sensemaking under Uncertainty</p>
+    <p style="max-width:720px;margin:0.5rem auto;">This work was supported by the <a href="https://www.turing.ac.uk" target="_blank">Turing&rsquo;s</a> Defence and Security programme through a partnership with the UK government in accordance with the framework agreement between GCHQ &amp; The Alan Turing Institute.</p>
     <p style="margin-top:0.5rem;">&copy; 2025 Ubaid Azam. Released under open-source licence.</p>
 </footer>
 
