@@ -640,6 +640,7 @@
             <li><a href="#approach">Approach</a></li>
             <li><a href="#results">Results</a></li>
             <li><a href="#defense">Defense</a></li>
+            <li><a href="#temporal">Phase II</a></li>
             <li><a href="#demo">Demo</a></li>
             <li><a href="#flip">FLiP</a></li>
             <li><a href="#publications">Publications</a></li>
@@ -1070,6 +1071,29 @@
     </div>
     </section>
 
+    <!-- ── Phase II: Temporal ── -->
+    <section id="temporal">
+    <div class="section-heading reveal">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        </div>
+        <h2>Phase II: When Knowledge Goes Stale</h2>
+    </div>
+
+    <p>
+        A fact is only as good as the last time someone confirmed it. A sighting from this morning and a sighting from a year ago are not the same evidence, yet a knowledge graph normally treats them identically. So does the confidence it reports. A system that is equally sure about year-old intelligence is confidently wrong at exactly the moment that matters.
+    </p>
+
+    <p>
+        PICASO Phase II extends the conceptual space through time. An entity's probability cloud no longer stays fixed: <strong>it widens as the evidence behind it ages</strong>. Crucially, each kind of relationship learns its own rate of widening from the data alone. Some facts never expire, such as where someone was born or what a vehicle is a type of, and their clouds stay sharp indefinitely. Others, such as a current location or a present alliance, go stale within weeks and blur accordingly. Nothing tells the model which is which; it works it out.
+    </p>
+
+    <p>
+        The harder question is whether that growing uncertainty is <em>honest</em>. It is not enough for a model to be well calibrated on average, because the average hides precisely the cases an analyst most needs to distrust. So we measure calibration <strong>conditional on how stale the evidence is</strong>, from same-day facts through to facts decades old, and ask whether a stated 95% confidence still means 95% at every age. That property is not what current practice measures, and we think that gap is of wider interest than any single model.
+    </p>
+
+    </section>
+
     <!-- ── Demo ── -->
     <section id="demo">
     <div class="section-heading reveal">
@@ -1156,9 +1180,14 @@
 
     <div class="pub-list reveal">
         <div class="pub-item">
-            <span class="pub-venue">CIKM 2026 &middot; Under Review</span>
+            <span class="pub-venue">CIKM 2026 &middot; Accepted</span>
             <div class="pub-title">PROCS: Uncertainty-Aware Knowledge Graph Embeddings via Conceptual Spaces</div>
-            <p class="pub-authors"><span class="me">Ubaid Azam</span>, <span class="me">Shoaib Jameel</span>. The core PICASO model: a Bayesian conceptual space with calibrated, intrinsic uncertainty quantification.</p>
+            <p class="pub-authors"><span class="me">Ubaid Azam</span>, Imran Razzak, Steven Schockaert, <span class="me">Shoaib Jameel</span>. The 35th ACM International Conference on Information and Knowledge Management, Rome, 7&ndash;11 November 2026. The core PICASO model: a Bayesian conceptual space with calibrated, intrinsic uncertainty quantification.</p>
+        </div>
+        <div class="pub-item">
+            <span class="pub-venue">UKAIRS 2026 &middot; Accepted</span>
+            <div class="pub-title">Calibrated by Design: Toward Uncertainty-Aware Federated Prompt-Tuning for Trustworthy Low-Resource NLP</div>
+            <p class="pub-authors"><span class="me">Ubaid Azam</span>, <span class="me">Shoaib Jameel</span>. UK AI Research Symposium, Edinburgh, 24&ndash;25 November 2026 (Emerging Research). Brings PICASO's calibration work to federated prompt-tuning.</p>
         </div>
         <div class="pub-item">
             <span class="pub-venue">LREC 2026 &middot; Full Paper</span>
