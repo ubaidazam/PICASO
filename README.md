@@ -78,7 +78,7 @@ dataset = KnowledgeGraph.from_triples(triples, num_entities=100, num_relations=1
 |--------|-------------|
 | `PICASOConfig` | All hyperparameters in one dataclass |
 | `KnowledgeGraph` | Data loading with `from_json()`, `from_triples()`, `from_tsv()` |
-| `PICASO` | The core model |
+| `PICASO` | The core model used as the base model |
 | `PICASOTrainer` | End-to-end training with early stopping and LR scheduling |
 | `Evaluator` | Link prediction, triple classification, uncertainty evaluation |
 | `PICASOLoss` | Adversarial + cross-entropy + calibration loss |
